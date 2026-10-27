@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd"
+  schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>uav_vio_bringup</name>
+  <version>0.1.0</version>
+  <description>Top-level orchestration and RViz configuration for the x500 D435i external-vision simulation.</description>
+  <maintainer email="huynhphuc1808@gmail.com">phuc</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>vio_msckf</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>uav_vio_px4_bridge</exec_depend>
+  <exec_depend>uav_vio_mission</exec_depend>
+  <exec_depend>uav_vio_sim</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

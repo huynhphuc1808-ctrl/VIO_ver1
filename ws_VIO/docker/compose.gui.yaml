@@ -1,0 +1,21 @@
+# X11 / XWayland; GPU access is optional and documented separately.
+services:
+  vio:
+    environment:
+      DISPLAY: ${DISPLAY:?Set DISPLAY from the host desktop session}
+      XAUTHORITY: /tmp/vio.xauth
+      QT_X11_NO_MITSHM: "1"
+      LIBGL_ALWAYS_SOFTWARE: ${LIBGL_ALWAYS_SOFTWARE:-1}
+    volumes:
+      - type: bind
+        source: /tmp/.X11-unix
+        target: /tmp/.X11-unix
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${DOCKER_XAUTHORITY:?Set DOCKER_XAUTHORITY to an X11 cookie file}
+        target: /tmp/vio.xauth
+        read_only: true
+        bind:
+          create_host_path: false

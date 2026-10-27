@@ -1,0 +1,11 @@
+# Import under ws_px4/src only when provisioning a NEW dependency workspace.
+# Validated API 1 triplet: PX4 50dabd8, px4_msgs 51e6678, interface library cd22.
+repositories:
+  px4_msgs:
+    type: git
+    url: https://github.com/PX4/px4_msgs.git
+    version: 51e66788d6d538c7eabdb6a3becb6eee78167cb2
+  px4-ros2-interface-lib:
+    type: git
+    url: https://github.com/Auterion/px4-ros2-interface-lib.git
+    version: cd22f009c666063db26e82b607595ac8313f7ee7

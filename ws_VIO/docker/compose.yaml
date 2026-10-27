@@ -1,0 +1,56 @@
+name: ws-vio
+
+services:
+  vio:
+    image: ws-vio:jazzy
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: dev
+      args:
+        VIO_UID: ${VIO_UID:-1000}
+        VIO_GID: ${VIO_GID:-1000}
+        INSTALL_REALSENSE: ${INSTALL_REALSENSE:-false}
+    init: true
+    network_mode: host
+    ipc: host
+    working_dir: /ws
+    stdin_open: true
+    tty: true
+    stop_signal: SIGINT
+    stop_grace_period: 30s
+    environment:
+      PX4_WS: ${PX4_WS:?Set PX4_WS to the absolute ws_px4 path}
+      VIO_ALGORITHM_WS: ${VIO_ALGORITHM_WS:?Set VIO_ALGORITHM_WS to the absolute VIO_ver1 workspace path}
+      ROS_DOMAIN_ID: ${ROS_DOMAIN_ID:-42}
+      ROS_LOCALHOST_ONLY: ${ROS_LOCALHOST_ONLY:-1}
+      GZ_PARTITION: ${GZ_PARTITION:-uav_vio}
+      GZ_IP: ${GZ_IP:-127.0.0.1}
+      CMAKE_BUILD_PARALLEL_LEVEL: ${VIO_BUILD_JOBS:-2}
+      MAKEFLAGS: -j${VIO_BUILD_JOBS:-2} -l${VIO_BUILD_JOBS:-2}
+    volumes:
+      - type: bind
+        source: ${PX4_WS:?Set PX4_WS}
+        target: ${PX4_WS:?Set PX4_WS}
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${VIO_ALGORITHM_WS:?Set VIO_ALGORITHM_WS}
+        target: ${VIO_ALGORITHM_WS:?Set VIO_ALGORITHM_WS}
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ..
+        target: /ws
+        bind:
+          create_host_path: false
+      - build:/ws/build
+      - install:/ws/install
+      - log:/ws/log
+
+volumes:
+  build:
+  install:
+  log:

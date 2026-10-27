@@ -1,0 +1,973 @@
+{
+  "schema": "astra-mission-migration-acceptance-v2",
+  "date": "2026-10-21",
+  "scope": "Pinned PX4 SITL, genuine D435i/OpenVINS; documented matrix, no hardware",
+  "status": "COMPLETE for recorded SITL acceptance packet",
+  "artifact_root": ".artifacts/astra_continuation_20261021_105007",
+  "pins": {
+    "px4": "50dabd8faef300a4c408070be60f3ea5089bef08",
+    "px4_msgs": "51e66788d6d538c7eabdb6a3becb6eee78167cb2",
+    "interface": "cd22f009c666063db26e82b607595ac8313f7ee7",
+    "ros_api": 1
+  },
+  "phases": {
+    "0": "PASS for recorded scope",
+    "1": "PASS for recorded scope",
+    "2": "PASS for recorded scope",
+    "3": "PASS for recorded scope",
+    "4": "PASS for recorded scope",
+    "5": "PASS for recorded scope"
+  },
+  "case_count": 26,
+  "cases": {
+    "minimal03": {
+      "pass": true,
+      "category": "nominal",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/minimal03/analysis.json",
+        "sha256": "4bc5ef84e26e71678ae7e0b630b5d409b0ff0c145d95178735494d13274ecdef"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/minimal03/flight.ulg",
+        "sha256": "7319aa79cdfa6fd579ac0216211f7511cae20042e4af3e53ef9b56c19d1aa3ff"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/minimal03/result.json",
+        "sha256": "f2b8d6c91fdc218a2e6b2c461081179d20c0e8e973adfc72e34c9d1f69a2fd96"
+      },
+      "mission_binary_sha256": null,
+      "checks": 16
+    },
+    "circle02": {
+      "pass": true,
+      "category": "nominal",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/circle02/analysis.json",
+        "sha256": "82f90dd6066c15c507e0a65d25cec7f4e8a61f82e6c0a76688fa37009ea8f12d"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/circle02/flight.ulg",
+        "sha256": "405d78f30db523a059b758bb21c721d5be1641bccf3baf19782af43f06274e23"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/circle02/result.json",
+        "sha256": "355c73a3161e9283830ede26b05bd1bcc653123827b6037bad00e649146525cf"
+      },
+      "mission_binary_sha256": "26ef8efecddbf58cca5f52289d31864a5124407693decfc5d62743ca3f2d352f",
+      "checks": 16
+    },
+    "ccw01": {
+      "pass": true,
+      "category": "nominal",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/ccw01/analysis.json",
+        "sha256": "6035c96f0309e2300537b8c880c9fdb3c5fe461ff6dde4e70d38b6371c571fb1"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/ccw01/flight.ulg",
+        "sha256": "3e33c1dbce734b122c421c8fcc484166d4069b4ce33933373f0ac66821e0b954"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/ccw01/result.json",
+        "sha256": "7dd4049088a37bab211d3aa539f6d3f373912c4027d00a84bcb2a63299f3e748"
+      },
+      "mission_binary_sha256": "26ef8efecddbf58cca5f52289d31864a5124407693decfc5d62743ca3f2d352f",
+      "checks": 16
+    },
+    "multilap01": {
+      "pass": true,
+      "category": "nominal",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/multilap01/analysis.json",
+        "sha256": "1c100e7e17a95cfcb8541a8981d3eba4fa0f896d7df2257a96d36c776ce609d0"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/multilap01/flight.ulg",
+        "sha256": "f9198311d29c921c1312fb3d13d2142e8f52ac1d73d82a35005d8183a2d6f65c"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/multilap01/result.json",
+        "sha256": "d072c50840b19c870f8c968e3bdf96ea30452325c8dea52e675d812f3e7b3e51"
+      },
+      "mission_binary_sha256": "26ef8efecddbf58cca5f52289d31864a5124407693decfc5d62743ca3f2d352f",
+      "checks": 16
+    },
+    "two_orbits02": {
+      "pass": true,
+      "category": "nominal",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/two_orbits02/analysis.json",
+        "sha256": "d4f30b9ed2437651c93e3f9320273b65f7bc30c93b9e73ab3ec2483a92f00c0d"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/two_orbits02/flight.ulg",
+        "sha256": "dd1250ee8aa714db7125c8d9cfd4a917e800d0c4510c627b26a6be9c6ef01ac4"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/two_orbits02/result.json",
+        "sha256": "d0a26d65409e82c2cfbf155cdc427d97658a0ab751a5c0df3c48df31f9dd053c"
+      },
+      "mission_binary_sha256": "26ef8efecddbf58cca5f52289d31864a5124407693decfc5d62743ca3f2d352f",
+      "checks": 16
+    },
+    "square01": {
+      "pass": true,
+      "category": "nominal",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/square01/analysis.json",
+        "sha256": "d61c4b8873f982ed081bb945837d1ab2be0b9d0b77d9967e9edd945be523dd5a"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/square01/flight.ulg",
+        "sha256": "412c5b50db5226bc2b05b9e5e3ecbb52c2fc4d1cc2695a453439ce40d416e11b"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/square01/result.json",
+        "sha256": "2e9da4cbf731d62a23c095aa9bb83c36af973a67a2ead5468b0049ae1ed67ca3"
+      },
+      "mission_binary_sha256": "26ef8efecddbf58cca5f52289d31864a5124407693decfc5d62743ca3f2d352f",
+      "checks": 16
+    },
+    "hybrid02": {
+      "pass": true,
+      "category": "nominal",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/hybrid02/analysis.json",
+        "sha256": "80a9a700a58ad1a1d966c9a28b7ad5cf6e9bfe8314d1427fba7c983510b4f205"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/hybrid02/flight.ulg",
+        "sha256": "daa3f7a6222f702e1925349673acb71c0c9dce49b634c8d92cbb7576d35f254f"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/hybrid02/result.json",
+        "sha256": "4c35a933b38a446f727c7fe498d8c03b865301e30003177b805a26c68e20a797"
+      },
+      "mission_binary_sha256": "26ef8efecddbf58cca5f52289d31864a5124407693decfc5d62743ca3f2d352f",
+      "checks": 16
+    },
+    "active_edit01": {
+      "pass": true,
+      "category": "nominal",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/active_edit01/analysis.json",
+        "sha256": "b53703bd5234b5a04798a16850a45cadfdc6bf46d0320ca91c8fb7e61f9f48c8"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/active_edit01/flight.ulg",
+        "sha256": "16608fd70d2a1167df168e10b8775b876af31f00ac895ac05c76ca33285c7576"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/active_edit01/result.json",
+        "sha256": "3af7abb8206becf580bd3354c24663b409b423c07519c29452b67db5488f926a"
+      },
+      "mission_binary_sha256": "26ef8efecddbf58cca5f52289d31864a5124407693decfc5d62743ca3f2d352f",
+      "checks": 18
+    },
+    "public_circle02": {
+      "pass": true,
+      "category": "nominal",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/public_circle02/analysis.json",
+        "sha256": "799590d9932b48cf7c83bbffc3e542e07ac06b7c8ee5a082b738c2d0558fa326"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/public_circle02/flight.ulg",
+        "sha256": "5c3a5c1cef2c4981df0080b767690100753527a704f8e28e9a22163372245e57"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/public_circle02/result.json",
+        "sha256": "939bc03e233556c27d91b11712bd7ac97a562ad760a5fec50133e1d6d0de117f"
+      },
+      "mission_binary_sha256": "757aa316c459546b329c9a533eb9dc733b97450a0dafb1cd60ba0ee26d9aaccf",
+      "checks": 16
+    },
+    "vio_loss_localtakeoff01": {
+      "pass": true,
+      "category": "fault",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/vio_loss_localtakeoff01/analysis.json",
+        "sha256": "e3907de72702ebb0d206e7af94c274d7c0bad7feacbb6c907a09646354570d94"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/vio_loss_localtakeoff01/flight.ulg",
+        "sha256": "29a793b202d994bba6875b555d6ce98d5d451b4878a939434d95b1eb5928ea40"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/vio_loss_localtakeoff01/result.json",
+        "sha256": "abc21087c51b5d5205125085e5a87abcca11a7a60da9f4c1c9e2626f620cc224"
+      },
+      "mission_binary_sha256": null,
+      "checks": 9
+    },
+    "vio_loss_localgoto01": {
+      "pass": true,
+      "category": "fault",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/vio_loss_localgoto01/analysis.json",
+        "sha256": "616c9f3060871d99cbbdcf4c0e466a4b4cc8bcaafb0eec2fd384579915654a63"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/vio_loss_localgoto01/flight.ulg",
+        "sha256": "bc63c0923faa690dbb56f852d7a32935cde909f84221998ff3bbfe017cade70e"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/vio_loss_localgoto01/result.json",
+        "sha256": "68d34b353aea8ecf66a088217d17510e4946dc7ac214614b1090eb5a194a406e"
+      },
+      "mission_binary_sha256": null,
+      "checks": 9
+    },
+    "vio_loss_localhold02": {
+      "pass": true,
+      "category": "fault",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/vio_loss_localhold02/analysis.json",
+        "sha256": "91705adf539813e7d673837f08ed7704ff726cceffe8c18d64f81119674802e8"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/vio_loss_localhold02/flight.ulg",
+        "sha256": "013708bfe89595d6e55a1a4e2e8343ff4661fbac99086b151a0bce729386a9af"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/vio_loss_localhold02/result.json",
+        "sha256": "2a48a3ce2493d32ae29700f2e98de359406b02d0a86065445e03ce6850630ffc"
+      },
+      "mission_binary_sha256": "14f9ba0d2627e56d31cef4871ba7bdb284d6da17c27866f598481d1d00a1ba91",
+      "checks": 10
+    },
+    "stale_local_localtakeoff02": {
+      "pass": true,
+      "category": "fault",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/stale_local_localtakeoff02/analysis.json",
+        "sha256": "157a1636f92a0aebf62af2129a6642772015669a09892d17866980c6e712b4cc"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/stale_local_localtakeoff02/flight.ulg",
+        "sha256": "ed5ab2d1c95c14e3a0103420ab15307fed406ea843bafdbcf52590fb0ee77c64"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/stale_local_localtakeoff02/result.json",
+        "sha256": "b86d87265b43496c2baa8049878eccf7e0dda043235a5261d894d8756dcef2fa"
+      },
+      "mission_binary_sha256": null,
+      "checks": 9
+    },
+    "stale_local_localgoto01": {
+      "pass": true,
+      "category": "fault",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/stale_local_localgoto01/analysis.json",
+        "sha256": "e6f9c24a864c21f609408bbccca71edf93efa51f80a1bd5c854bb757e52f8108"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/stale_local_localgoto01/flight.ulg",
+        "sha256": "fbd5fdf76a466314ecc0f51d7e522c83da7af8bc9d80a7ffe6518e9b10a0a408"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/stale_local_localgoto01/result.json",
+        "sha256": "652c34c364461d88c722eba2962853c10b381ca86a7d4dbdc844559a72207037"
+      },
+      "mission_binary_sha256": null,
+      "checks": 8
+    },
+    "stale_local_localhold02": {
+      "pass": true,
+      "category": "fault",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/stale_local_localhold02/analysis.json",
+        "sha256": "2e41801f62daf4f97e8b8edecdef40e0e1633f1af8b914c98e72dbc403fc13c5"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/stale_local_localhold02/flight.ulg",
+        "sha256": "af07cdb117258974dd96250df9239bcfe658b1a1e516083a0f3a20d104ad637e"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/stale_local_localhold02/result.json",
+        "sha256": "0e3a6e457e63255aa687812e1f33b85bcfd0db4c28590b7a8b92a6c01da94b25"
+      },
+      "mission_binary_sha256": "14f9ba0d2627e56d31cef4871ba7bdb284d6da17c27866f598481d1d00a1ba91",
+      "checks": 8
+    },
+    "takeover_localtakeoff01": {
+      "pass": true,
+      "category": "fault",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/takeover_localtakeoff01/analysis.json",
+        "sha256": "2d807619b6550cc34d6bf33f543c5a921806a34fdb95a2fa4fb742ab613de6b1"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/takeover_localtakeoff01/flight.ulg",
+        "sha256": "18408b69d1e59feef8052bb3be78aef10d0a6bb62596df04e0f013f5dc406802"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/takeover_localtakeoff01/result.json",
+        "sha256": "7dec98de739ec705076a957c8b3cc97b94819ba3457c3b15938e343d42dc4419"
+      },
+      "mission_binary_sha256": null,
+      "checks": 9
+    },
+    "takeover_goto01": {
+      "pass": true,
+      "category": "fault",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/takeover_goto01/analysis.json",
+        "sha256": "3e93dd508dc7096956c4f75a3fc8d13b1700e1a5c719917defc57be3ea8f054a"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/takeover_goto01/flight.ulg",
+        "sha256": "bb00105e1dba4e72c2ae06d0a6c7962b6b9aa7f32dbb2387cd36f9506f4873fb"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/takeover_goto01/result.json",
+        "sha256": "42b438a637b8e4e4910ef70b58515127b137ddbaa56ab65cf3a456bf14de2be7"
+      },
+      "mission_binary_sha256": null,
+      "checks": 7
+    },
+    "takeover_localhold01": {
+      "pass": true,
+      "category": "fault",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/takeover_localhold01/analysis.json",
+        "sha256": "07ec86d51f40e658038127e03083e2c6679d4857926fedddf3f23cac65b31d4a"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/takeover_localhold01/flight.ulg",
+        "sha256": "659cdb7600c48ad4202abbdef4f21c7ec68e4a2a0e6d0394bef2f47b808d3204"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/takeover_localhold01/result.json",
+        "sha256": "35a339b640e8fb77c5c80d9ab82283077bbf48c3c8f668193607be9dbf150f50"
+      },
+      "mission_binary_sha256": null,
+      "checks": 9
+    },
+    "process_death_localhold01": {
+      "pass": true,
+      "category": "fault",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/process_death_localhold01/analysis.json",
+        "sha256": "3b47bc264b077fdcd30d7f1406cd65509237ac74333650f429175be3d4b4b00a"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/process_death_localhold01/flight.ulg",
+        "sha256": "8adaf3030645b0188520b80c5b4c34375ef2e022d5abe3ca0344e77908ba3c43"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/process_death_localhold01/result.json",
+        "sha256": "29d6245a83d1aa9617379181d80df0fe4709c20849e5143e0832ad5626ba7b88"
+      },
+      "mission_binary_sha256": "14f9ba0d2627e56d31cef4871ba7bdb284d6da17c27866f598481d1d00a1ba91",
+      "checks": 8
+    },
+    "progress_timeout_localhold01": {
+      "pass": true,
+      "category": "fault",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/progress_timeout_localhold01/analysis.json",
+        "sha256": "32c83c44e1f088dc50992b1e26189317217da99be9185f56f9f79321fdd26ab2"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/progress_timeout_localhold01/flight.ulg",
+        "sha256": "fdf1d483d2f2167642bdb7e9a6b91d07be333ac04fda0a736fa6d9a7d3e52ba4"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/progress_timeout_localhold01/result.json",
+        "sha256": "9de9e5897a049b00452f2f9a50ba739df0de2729ad61a96ff12deea9f9120f5d"
+      },
+      "mission_binary_sha256": "14f9ba0d2627e56d31cef4871ba7bdb284d6da17c27866f598481d1d00a1ba91",
+      "checks": 10
+    },
+    "frame-reset01": {
+      "pass": true,
+      "category": "fault",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/frame-reset01/analysis.json",
+        "sha256": "6fe03ba25a9603130c0e7c663cbebc05661f0c487b3496981bf3704398ca1630"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/frame-reset01/flight.ulg",
+        "sha256": "930e16ee6e51c81ce42c16239dba92e667d14f75b4a61ffd6844d5ae78ebe3e1"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/frame-reset01/result.json",
+        "sha256": "edd33aa5947bada9f046194a66f3049bc1ca823e911bd10c5f529044f5cb9b0a"
+      },
+      "mission_binary_sha256": "26ef8efecddbf58cca5f52289d31864a5124407693decfc5d62743ca3f2d352f",
+      "checks": 9
+    },
+    "reselection01": {
+      "pass": true,
+      "category": "fault",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/reselection01/analysis.json",
+        "sha256": "6d734407ce94200b28aa9d953a0617eb05516b06402c754669619cec3342127f"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/reselection01/flight.ulg",
+        "sha256": "d99e50c7eb5f3f3314f08cf9a3679b5ab0c29b76aa9b737085d50e1aa7118de5"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/reselection01/result.json",
+        "sha256": "8838728dbd02a386700c9bddc586706d8853fed618980acba7c3939c36282ed6"
+      },
+      "mission_binary_sha256": "26ef8efecddbf58cca5f52289d31864a5124407693decfc5d62743ca3f2d352f",
+      "checks": 9
+    },
+    "ground04": {
+      "pass": true,
+      "category": "ground",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/ground04/result.json",
+        "sha256": "cb1d5a255d348810db71f1d922f6dc8e5ffdf451624cd89a4a37a52b4bdd0fbf"
+      }
+    },
+    "gnss_runtime_smoke": {
+      "pass": true,
+      "category": "ground",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/gnss_runtime_smoke/result.json",
+        "sha256": "46848fcd3cd187f6e45066cbbd3e7413c1b6147b29c8efaac59e0dcca3d74620"
+      }
+    },
+    "stationary01": {
+      "pass": true,
+      "category": "ground",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/stationary01/summary.json",
+        "sha256": "775d06f6c28cde8e1c15358ba0d61cc2eb0229a04cf640b4eab7cdd3c3602d66"
+      }
+    },
+    "gnss_vio02": {
+      "pass": true,
+      "category": "native Navigator regression",
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/gnss_vio02/analysis.json",
+        "sha256": "dd888131cd9e3a4ea6c73bc53c3046680aa3b41e789e15940a24c51989c1ad02"
+      },
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/gnss_vio02/result.json",
+        "sha256": "65cc383b6cc12347539c10566be82bbb0d174779c39af1b57272c15d5d3790da"
+      },
+      "ulog": {
+        "path": ".artifacts/astra_continuation_20261021_105007/gnss_vio02/flight.ulg",
+        "sha256": "39be44a11ce85490d08cf6438271c75d8fb034049e21d3427dae82a598de2063"
+      },
+      "metrics": {
+        "phase_time_s": {
+          "arm": 21.366,
+          "gnss_out": 37.206,
+          "gnss_back": 39.954,
+          "both_out": 49.434,
+          "px4_descend": 53.55,
+          "disarm": 59.586
+        },
+        "prearm_joint_fusion_s": 5.112,
+        "gnss_outage_mission_sequences": [
+          3,
+          4
+        ],
+        "max_position_motion_residual_m": 0.006033014005148872,
+        "aided_mission_reset_counts": {
+          "xy_reset_counter": 0,
+          "z_reset_counter": 0,
+          "heading_reset_counter": 0
+        }
+      }
+    }
+  },
+  "orbit_windows": [
+    {
+      "case": "circle02",
+      "orbit_index": 0,
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/circle02/orbit0_physical_analysis.json",
+        "sha256": "168780bb9c08990f2b850b8f9cfac0efce0dbbe36ddaec6ab3f5ad0eee05f8bd"
+      },
+      "native_metrics": {
+        "center_east_m": 0.5378261208534241,
+        "center_north_m": 0.22278711199760437,
+        "lap_angle_rad": 6.30592962356791,
+        "laps": 1.0036198703804478,
+        "orbit_altitude_above_start_m": 1.9329431823101535,
+        "orbit_end_timestamp_us": 51246000,
+        "orbit_position_samples": 1160,
+        "orbit_start_timestamp_us": 35826000,
+        "orbit_z_mean_ned_m": -2.0319522267785564,
+        "orbit_z_peak_to_peak_m": 0.01801133155822754,
+        "radial_band_acquired_timestamp_us": 37332000,
+        "radius_max_m": 2.267783171251044,
+        "radius_mean_m": 2.0581950685628483,
+        "radius_min_m": 1.5002286108742877,
+        "radius_rmse_m": 0.10823384939572724,
+        "start_z_ned_m": -0.09900904446840286
+      },
+      "physical_metrics": {
+        "altitude_m": 1.9802439507182645,
+        "laps": 0.9972006317254439,
+        "radius_max_m": 2.2518125038301076,
+        "radius_min_m": 1.502380733808675,
+        "radius_rmse_m": 0.11424620219028435,
+        "speed_median_m_s": 0.959956493630004,
+        "z_peak_to_peak_m": 0.03082418441772461
+      }
+    },
+    {
+      "case": "ccw01",
+      "orbit_index": 0,
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/ccw01/orbit0_physical_analysis.json",
+        "sha256": "8fd98ae60acdb501e9f7b43043176034eb20e98a6106ef020af6565b4e5fc114"
+      },
+      "native_metrics": {
+        "center_east_m": 0.5119783878326416,
+        "center_north_m": 0.16659292578697205,
+        "lap_angle_rad": 6.317347862500261,
+        "laps": 1.0054371395479358,
+        "orbit_altitude_above_start_m": 1.9432751261038224,
+        "orbit_end_timestamp_us": 52692000,
+        "orbit_position_samples": 1182,
+        "orbit_start_timestamp_us": 36984000,
+        "orbit_z_mean_ned_m": -2.0425639473242203,
+        "orbit_z_peak_to_peak_m": 0.014934539794921875,
+        "radial_band_acquired_timestamp_us": 38514000,
+        "radius_max_m": 2.266821954596246,
+        "radius_mean_m": 2.049281453403468,
+        "radius_min_m": 1.509950909476944,
+        "radius_rmse_m": 0.10034786841456833,
+        "start_z_ned_m": -0.09928882122039795
+      },
+      "physical_metrics": {
+        "altitude_m": 1.9783746967657228,
+        "laps": 1.0113002938807842,
+        "radius_max_m": 2.287215098637502,
+        "radius_min_m": 1.5045604851435022,
+        "radius_rmse_m": 0.10505918564310567,
+        "speed_median_m_s": 0.9269735041730665,
+        "z_peak_to_peak_m": 0.05650448799133301
+      }
+    },
+    {
+      "case": "multilap01",
+      "orbit_index": 0,
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/multilap01/orbit0_physical_analysis.json",
+        "sha256": "1510d072fe47b4872b805983f2d13079bf4d06f1c8e0b4274b4daca44a5fff10"
+      },
+      "native_metrics": {
+        "center_east_m": 0.515801727771759,
+        "center_north_m": 0.23375484347343445,
+        "lap_angle_rad": 12.596527598318236,
+        "laps": 2.004799633065828,
+        "orbit_altitude_above_start_m": 1.950379299596547,
+        "orbit_end_timestamp_us": 65394000,
+        "orbit_position_samples": 2254,
+        "orbit_start_timestamp_us": 36828000,
+        "orbit_z_mean_ned_m": -2.0495381677901734,
+        "orbit_z_peak_to_peak_m": 0.020537614822387695,
+        "radial_band_acquired_timestamp_us": 38358000,
+        "radius_max_m": 2.253660979125194,
+        "radius_mean_m": 2.0532823501619606,
+        "radius_min_m": 1.502892671020755,
+        "radius_rmse_m": 0.08588141298143591,
+        "start_z_ned_m": -0.0991588681936264
+      },
+      "physical_metrics": {
+        "altitude_m": 1.9753853402211325,
+        "laps": 1.98445904484743,
+        "radius_max_m": 2.2704450222990933,
+        "radius_min_m": 1.5121280200053553,
+        "radius_rmse_m": 0.12759911495046702,
+        "speed_median_m_s": 0.9747697784701322,
+        "z_peak_to_peak_m": 0.07955038547515869
+      }
+    },
+    {
+      "case": "two_orbits02",
+      "orbit_index": 0,
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/two_orbits02/orbit0_physical_analysis.json",
+        "sha256": "44b5d3bd40654d2063fb20bec5769c5ca675ab3ef976aba6c8bbb0b941f08129"
+      },
+      "native_metrics": {
+        "center_east_m": 0.5540839433670044,
+        "center_north_m": 0.21168096363544464,
+        "lap_angle_rad": 6.331279752042866,
+        "laps": 1.0076544686352515,
+        "orbit_altitude_above_start_m": 1.9459202966964848,
+        "orbit_end_timestamp_us": 48756000,
+        "orbit_position_samples": 1167,
+        "orbit_start_timestamp_us": 33252000,
+        "orbit_z_mean_ned_m": -2.0430934063470967,
+        "orbit_z_peak_to_peak_m": 0.017637252807617188,
+        "radial_band_acquired_timestamp_us": 34764000,
+        "radius_max_m": 2.2591588289792406,
+        "radius_mean_m": 2.0564514314196916,
+        "radius_min_m": 1.5042595043694644,
+        "radius_rmse_m": 0.10748990284190128,
+        "start_z_ned_m": -0.09717310965061188
+      },
+      "physical_metrics": {
+        "altitude_m": 1.9862081444476332,
+        "laps": 1.0037481294999384,
+        "radius_max_m": 2.270699041645443,
+        "radius_min_m": 1.5137880241992356,
+        "radius_rmse_m": 0.1246861305936049,
+        "speed_median_m_s": 0.9490190027669263,
+        "z_peak_to_peak_m": 0.0796506404876709
+      }
+    },
+    {
+      "case": "two_orbits02",
+      "orbit_index": 1,
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/two_orbits02/orbit1_physical_analysis.json",
+        "sha256": "9af5f6ee931fb69d1c98b8555ae1083c1d0b0be298a1640c931904621201dd1b"
+      },
+      "native_metrics": {
+        "center_east_m": -0.6423461437225342,
+        "center_north_m": 1.9255248308181763,
+        "lap_angle_rad": 6.329347530812626,
+        "laps": 1.0073469460753117,
+        "orbit_altitude_above_start_m": 1.9931705410468292,
+        "orbit_end_timestamp_us": 69612000,
+        "orbit_position_samples": 1172,
+        "orbit_start_timestamp_us": 53976000,
+        "orbit_z_mean_ned_m": -2.090343650697441,
+        "orbit_z_peak_to_peak_m": 0.022943735122680664,
+        "radial_band_acquired_timestamp_us": 55560000,
+        "radius_max_m": 2.1873525825468354,
+        "radius_mean_m": 2.0391837036769944,
+        "radius_min_m": 1.5089566631889375,
+        "radius_rmse_m": 0.0922635683906355,
+        "start_z_ned_m": -0.09717310965061188
+      },
+      "physical_metrics": {
+        "altitude_m": 2.103717642751607,
+        "laps": 0.9975579051657383,
+        "radius_max_m": 2.1741920883596726,
+        "radius_min_m": 1.5024028478140805,
+        "radius_rmse_m": 0.10191949806869093,
+        "speed_median_m_s": 0.932934106459818,
+        "z_peak_to_peak_m": 0.058419227600097656
+      }
+    },
+    {
+      "case": "hybrid02",
+      "orbit_index": 0,
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/hybrid02/orbit0_physical_analysis.json",
+        "sha256": "7b2071b87115373595f69ccb61630e681dcf37f1a365f413717560947b3656c8"
+      },
+      "native_metrics": {
+        "center_east_m": 1.2786225080490112,
+        "center_north_m": 1.2011061906814575,
+        "lap_angle_rad": 6.318741665187185,
+        "laps": 1.0056589701352543,
+        "orbit_altitude_above_start_m": 1.9891153862252504,
+        "orbit_end_timestamp_us": 55992000,
+        "orbit_position_samples": 1145,
+        "orbit_start_timestamp_us": 40680000,
+        "orbit_z_mean_ned_m": -2.090456767894295,
+        "orbit_z_peak_to_peak_m": 0.012738466262817383,
+        "radial_band_acquired_timestamp_us": 42258000,
+        "radius_max_m": 2.200939241542917,
+        "radius_mean_m": 2.0620541401048262,
+        "radius_min_m": 1.5064784669638214,
+        "radius_rmse_m": 0.10355744141794695,
+        "start_z_ned_m": -0.1013413816690445
+      },
+      "physical_metrics": {
+        "altitude_m": 2.0023930500706193,
+        "laps": 1.003405909901488,
+        "radius_max_m": 2.211142503609046,
+        "radius_min_m": 1.5027608241005286,
+        "radius_rmse_m": 0.09956305705200162,
+        "speed_median_m_s": 0.9471015305320969,
+        "z_peak_to_peak_m": 0.020484328269958496
+      }
+    },
+    {
+      "case": "public_circle02",
+      "orbit_index": 0,
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/public_circle02/orbit0_physical_analysis.json",
+        "sha256": "e6d164481ce1b697b24313ce1706bde0821f0beb2e7e99fff93c5a40984cbd39"
+      },
+      "native_metrics": {
+        "center_east_m": 0.5588469505310059,
+        "center_north_m": 0.31569430232048035,
+        "lap_angle_rad": 6.302127531815921,
+        "laps": 1.0030147486840297,
+        "orbit_altitude_above_start_m": 1.9317400032374525,
+        "orbit_end_timestamp_us": 51072000,
+        "orbit_position_samples": 1158,
+        "orbit_start_timestamp_us": 35664000,
+        "orbit_z_mean_ned_m": -2.0301870280596876,
+        "orbit_z_peak_to_peak_m": 0.021756410598754883,
+        "radial_band_acquired_timestamp_us": 37188000,
+        "radius_max_m": 2.2536941272567965,
+        "radius_mean_m": 2.0577011054235506,
+        "radius_min_m": 1.5149852302054574,
+        "radius_rmse_m": 0.10392453802571044,
+        "start_z_ned_m": -0.09844702482223511
+      },
+      "physical_metrics": {
+        "altitude_m": 1.98148346333999,
+        "laps": 1.0012381916351616,
+        "radius_max_m": 2.2466704947636402,
+        "radius_min_m": 1.5008395548076523,
+        "radius_rmse_m": 0.10866428760969697,
+        "speed_median_m_s": 0.9623476797058136,
+        "z_peak_to_peak_m": 0.06067395210266113
+      }
+    }
+  ],
+  "same_binary_data_matrix": {
+    "cases": [
+      "circle02",
+      "ccw01",
+      "multilap01",
+      "two_orbits02",
+      "square01",
+      "hybrid02",
+      "active_edit01"
+    ],
+    "sha256": "26ef8efecddbf58cca5f52289d31864a5124407693decfc5d62743ca3f2d352f",
+    "note": "Final circle generator has a narrow unsigned-laps revision fix; do not claim every episode used the final binary."
+  },
+  "current_mission_binary": {
+    "path": "build/uav_vio_mission/vio_mission",
+    "sha256": "757aa316c459546b329c9a533eb9dc733b97450a0dafb1cd60ba0ee26d9aaccf"
+  },
+  "airborne_capture": {
+    "image": {
+      "path": ".artifacts/astra_continuation_20261021_105007/active_edit01/airborne.png",
+      "sha256": "8613e300d18006af0cb8b86568ce33419bd3cbf11636eb9b2f40d0d880ab6455"
+    },
+    "telemetry": {
+      "path": ".artifacts/astra_continuation_20261021_105007/active_edit01/airborne_snapshot.json",
+      "sha256": "7d4cdd341144fd2fd9cb985c11469c53589fc4f4cd62fa7f50bd6094935a1c69"
+    },
+    "visually_inspected": true,
+    "physical_height_m": 2.009,
+    "asserted_by": "active_edit01 nominal analysis"
+  },
+  "retained_failed_attempts": {
+    "minimal01": {
+      "accepted": false,
+      "reason": "Prearm stationary gate timeout; no arm",
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/minimal01/result.json",
+        "sha256": "32bc51c98811f50f080a6d3714f2d93b18c5ca3010ea0d5dddfe7d1fbf7b6cec"
+      }
+    },
+    "minimal02": {
+      "accepted": false,
+      "reason": "Prearm stationary gate timeout; no arm",
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/minimal02/result.json",
+        "sha256": "8775fca5342cacb1c7b34e9ccfceaf40530efd06ef3cdd4394218a50e8b2e295"
+      }
+    },
+    "circle01": {
+      "accepted": false,
+      "reason": "API1 zero-clock wrapper exception before arm; fixed",
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/circle01/result.json",
+        "sha256": "299237967780043678ee9e6b6a27797454d29abde43129f5641c49d9d49b7dba"
+      }
+    },
+    "two_orbits01": {
+      "accepted": false,
+      "reason": "Real VIO/local receipt gap in Takeoff; automatic native Land",
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/two_orbits01/result.json",
+        "sha256": "fcbcdcf5294db925d26638b4c5595e837506c941f80c3659cc0078ea85c9d483"
+      }
+    },
+    "hybrid01": {
+      "accepted": false,
+      "reason": "Insufficient scene wall clearance inferred from swept rotor envelope; unstable physical geometry and Hold timeout; automatic native Land",
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/hybrid01/result.json",
+        "sha256": "31219509ebe40c951156510b2b8a957c298cebc4cec073ecf1ae3956c8300ed2"
+      },
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/hybrid01/analysis.json",
+        "sha256": "633c57d669d5ed90fb18ad33c669de4cce2e721c0c2939a3d2c3a324dd0de2f0"
+      },
+      "orbit_analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/hybrid01/orbit0_physical_analysis.json",
+        "sha256": "e0ebce77d6d8161b14aa4ef938ccf57d92f9231366a73827385ad1c1814d9803"
+      },
+      "collision_inference": {
+        "path": ".artifacts/astra_continuation_20261021_105007/hybrid01/collision_clearance.json",
+        "sha256": "b49295ad8c05b3bc1262dafe11115783f36653a581c7eb809d328b35758cc1f3"
+      }
+    },
+    "stale_local_localtakeoff01": {
+      "accepted": false,
+      "reason": "Old raw result success=true is invalid: manual recovery required; final analyzer FAIL. Fixed retry02 accepted.",
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/stale_local_localtakeoff01/result.json",
+        "sha256": "d205409f76a4da581b670aca24f1ec0891284dc9a409bcac45c5527dcfd19330"
+      },
+      "analysis": {
+        "path": ".artifacts/astra_continuation_20261021_105007/stale_local_localtakeoff01/analysis.json",
+        "sha256": "7591e039bc30e289f858af2cfd13dd2fc530697442da323294010fb446c24a5c"
+      },
+      "manual_recovery": {
+        "path": ".artifacts/astra_continuation_20261021_105007/stale_local_localtakeoff01/manual_recovery.json",
+        "sha256": "69360269daabbca3c855bc6092bf29a87760a41420257e00e5a4e7efd02485ad"
+      }
+    },
+    "public_circle01": {
+      "accepted": false,
+      "reason": "Generated vs file upstream JSON checksum mismatch before arm; fixed and text roundtrip regression added",
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/public_circle01/result.json",
+        "sha256": "a1bcf00e79833dcfab6e161cf8222652d5f0d7834c9065dbb2e003aba9012dac"
+      }
+    },
+    "gnss_vio01": {
+      "accepted": false,
+      "reason": "Acceptance wrapper logging argument collision before base/arm; fixed",
+      "result": {
+        "path": ".artifacts/astra_continuation_20261021_105007/gnss_vio01/result.json",
+        "sha256": "4074bdd8cab47183dacc61c37f96dc1bbb9d46475af0accbafa58a14d405c668"
+      }
+    }
+  },
+  "tests": {
+    "ctest_entries": 12,
+    "bridge_pytest_cases": 33,
+    "launch_support_pytest_cases": 11,
+    "analyzer_regressions": 7,
+    "totals_overlap": true,
+    "logs": {
+      "build_revision_fix.log": {
+        "path": ".artifacts/astra_continuation_20261021_105007/build_revision_fix.log",
+        "sha256": "58612ef02f1204a3cee0296d195681b5462ca68463ea8242c933d2d3a003f0fd"
+      },
+      "ctest_revision_fix.log": {
+        "path": ".artifacts/astra_continuation_20261021_105007/ctest_revision_fix.log",
+        "sha256": "fe513727248ec7da65f3747f6c2fc80d69ea514517d7e71df5d8f8e411ace82e"
+      },
+      "colcon_test_final.log": {
+        "path": ".artifacts/astra_continuation_20261021_105007/colcon_test_final.log",
+        "sha256": "8e4221abe2efe56cd212a11d910b5b2f52a308f87947d0b7912ec03b37e35934"
+      },
+      "mission_test_results_final.log": {
+        "path": ".artifacts/astra_continuation_20261021_105007/mission_test_results_final.log",
+        "sha256": "a2e7eda1d16d5ff1f41a39a2de65730cd06717a84c55861a5e08fdeb5c4ffab0"
+      },
+      "bridge_test_results_final.log": {
+        "path": ".artifacts/astra_continuation_20261021_105007/bridge_test_results_final.log",
+        "sha256": "08c82a33222503fce1a0e43122b4256df5cba8ea87839ba6f4d5b9fe04b62706"
+      },
+      "sim_test_results_final.log": {
+        "path": ".artifacts/astra_continuation_20261021_105007/sim_test_results_final.log",
+        "sha256": "58c6dee09452e642c94662b29772d89881f770a8b9b96df3df216c62a82d7fd2"
+      },
+      "sim_launch_tests_cutover.log": {
+        "path": ".artifacts/astra_continuation_20261021_105007/sim_launch_tests_cutover.log",
+        "sha256": "e8f01c9ea06de443c433d59484983036f62a38e00c91145186b7988e21335a39"
+      },
+      "analyzer_tests_final.log": {
+        "path": ".artifacts/astra_continuation_20261021_105007/analyzer_tests_final.log",
+        "sha256": "cdee9a9763a60e45a4e1a34ff262421dcb584787920b25cfb06c5b915495e7ad"
+      },
+      "gnss_runtime_smoke.log": {
+        "path": ".artifacts/astra_continuation_20261021_105007/gnss_runtime_smoke.log",
+        "sha256": "358f60749841f1575a70c7b8071ca5d7be0b17b151be9196848243b02ee485f3"
+      }
+    }
+  },
+  "rollback": {
+    "before_work": {
+      "path": ".artifacts/astra_continuation_20261021_105007/source_before_work.tgz",
+      "sha256": "4ce4583386f4bbefd680de54931890dc631eeab7d75c09e2820a17db9bd00eb5"
+    },
+    "before_cutover": {
+      "path": ".artifacts/astra_continuation_20261021_105007/source_before_cutover.tgz",
+      "sha256": "18017bbc678c56f45ed38023bc8338a22b6ab640fdd331d4c1ac720d88dbc2cc"
+    },
+    "manifest": {
+      "path": ".artifacts/astra_continuation_20261021_105007/cutover_rollback.json",
+      "sha256": "78a5fcb8f0cc27eecb9a308d31f29be4993fb12ce650df1ec1827bef179383be"
+    },
+    "legacy_artifacts": ".artifacts/astra_continuation_20261021_105007/legacy_before_cutover",
+    "restore_policy": "Extract separately, review and restore selected files only; rebuild. Never overwrite user work or run old/new backends together."
+  },
+  "review": {
+    "owner": "primary agent only; sub-agents disabled at user request",
+    "delta": {
+      "path": ".artifacts/astra_continuation_20261021_105007/primary_review_source_delta.diff",
+      "sha256": "079b3d761de21507d089f5c252fd189c2aae27804fe27b425d277d99d5d1f4e3"
+    },
+    "resolved_findings": [
+      "ROS-local stale gate suppressed native recovery Land",
+      "API1 wrappers unavailable during zero-clock startup",
+      "initial monitor/same-revision restoration error reporting",
+      "generated vs parsed positive-laps JSON checksum type mismatch",
+      "old launch test expected removed legacy executable"
+    ],
+    "remaining_source_findings": []
+  },
+  "process_cleanup": {
+    "path": ".artifacts/astra_continuation_20261021_105007/final_process_inventory.json",
+    "sha256": "403556e80d662149544c62992b8eef78a839f0fbaadb99dac95fb1f2e1431b00"
+  },
+  "limitations": [
+    "Exact recorded cases only; not all Cartesian fault/action combinations.",
+    "Progress timeout flight is Hold; other phase deadline boundaries also have offline tests.",
+    "Frame reset is a counter injection into mission-only telemetry alias, not an actual EKF reset.",
+    "VIO freshness/status and EV fusion do not prove visual feature quality or eliminate arbitrary drift.",
+    "No hardware, long GNSS outage/large drift, featureless-image, Docker or obstacle-avoidance certification.",
+    "Ground truth is postflight evaluation only; no GNSS/ground truth enters OpenVINS, no ground truth enters estimation/control.",
+    "Dependency versions unchanged; existing dirty checkouts and worktree preserved. No staging, commit or reset."
+  ],
+  "final_source_sha256": {
+    "scripts/analyze_gnss_vio_log.py": "b9fe2522682481d478e1e657287594cae9b56c9fa5e7dc9c79e621aa04039f6c",
+    "scripts/analyze_mission_fault.py": "6dc737fc8a47fda63a19afc89c00e27872525697349eeb5eaf16fd50c14ece85",
+    "scripts/analyze_mission_sitl.py": "dfd61bd2011277b1fa3ac86f8d8c0461fc1b719af3b9eec4f32e0d7dac19ac81",
+    "scripts/analyze_vio_circle_log.py": "ed568f3751bc8f1557f514de802eaaf299c2e8536bde66849a23f711837a934e",
+    "scripts/collect_phase1_sitl.py": "0e86be4c3ac6b1d334543d77ca1b3ad2fb0331f7be5bf98c15fea640461bf9e2",
+    "scripts/diagnose_vio_stationary.py": "eaa3abe6d4c1f6ad7d736f5a76518487adac6a87a843888c230aefb8fff05b62",
+    "scripts/run_gnss_vio_sitl.py": "79d2fcf66f709fa16456cd713a33022a9de6d260dc64655fb4d2016eb35e7b56",
+    "scripts/run_mission_ground_sitl.py": "4dc00c8928c2fe7aa30ee103d1c852c7f4b17a4a0453ab00a4c4e21e9cd34488",
+    "scripts/run_mission_sitl.py": "38f2208a6c1dffd5b275af3e8cf5a8e4485d4ac5c2aaf1ebd05323f9d488b15f",
+    "scripts/test_gnss_vio_mission.py": "47210406d2df0f022131138f035e3e63b37c80be144a5c3782c4e4fbf7c85242",
+    "src/uav_vio_bringup/launch/vio_circle.launch.py": "0b34af6062821fc35bf3e9131734c55d1e6e9c7aafd04a5f72d667cb84dbb500",
+    "src/uav_vio_bringup/launch/vio_mission.launch.py": "fbe9fd4d0970c9fb50624d49601a1290d19aceb6572b92c4c2cc489d69881113",
+    "src/uav_vio_mission/CMakeLists.txt": "27d6fad08f69ae2253ec14695319419ebf0625e9097dc55a337ab20530d0398b",
+    "src/uav_vio_mission/config/circle.json": "4e950594daa219d6d4512a3f6115cbeabb60396c2f460896de50c651b93eece8",
+    "src/uav_vio_mission/config/circle_ccw.json": "0d0ae6d1727ee85466cb4e0f5201def27b55218539dae94debe6602e580b50fc",
+    "src/uav_vio_mission/config/circle_multilap.json": "9177627650a441d3e6e65b5c72f61e8ccba4ec87660d2f665b86032d1d923a1e",
+    "src/uav_vio_mission/config/local_goto_orbit.json": "a4c10e6e5e3c09be4f4626c4346e1b07b5f507a505fff3813f7a5fee9145b81d",
+    "src/uav_vio_mission/config/local_takeoff_land.json": "e712df06955f0127fd7e50280414d8e2d1608f00ac45d5aa612c1ceccb6cd16b",
+    "src/uav_vio_mission/config/square.json": "9d6893ebbb36229a3da6f976087ed1116bfdab8c2676270d93fa041ef757a7d8",
+    "src/uav_vio_mission/config/two_orbits.json": "0723056f241ca357abaecb4549ffda6f424794a813cc9893a8764d027485cb12",
+    "src/uav_vio_mission/include/uav_vio_mission/mission_actions.hpp": "074df65863f900d418ca91840be2a13d607f6c0b98d0864abab5cfdf8612604c",
+    "src/uav_vio_mission/include/uav_vio_mission/mission_context.hpp": "41ae7274a9f9fef10757155f3267a59db2e3016a3a6b57c911ac03dc53fe1f39",
+    "src/uav_vio_mission/include/uav_vio_mission/mission_definition.hpp": "f7000cac6b13a18e6e8c7143480eb754de4f1b7d82118908f0cb29114d572a18",
+    "src/uav_vio_mission/include/uav_vio_mission/mission_file_observer.hpp": "59141398068efb617b5e4cc69658030a754eb75a2405de27da81d72662a2269d",
+    "src/uav_vio_mission/include/uav_vio_mission/mission_guards.hpp": "a13b52cf2de72d9e3a314bbb5a2e2fffe1f7c2f2cb0f4e10fbabb6a6718ab100",
+    "src/uav_vio_mission/include/uav_vio_mission/mission_logic.hpp": "c7750ef6ddb268fc98b6c64eb4fa2b3d94501e4a725e69d08abd05201be66782",
+    "src/uav_vio_mission/include/uav_vio_mission/mission_runtime.hpp": "55101c561416db5cb343db70e422a85e1f6040e5a6bd8657ed215f6b6123103b",
+    "src/uav_vio_mission/src/mission_actions.cpp": "b96fe2d3a7c0f62957fa1a539550857fd04f2246281092ab0d367f3954c9e43e",
+    "src/uav_vio_mission/src/mission_context.cpp": "d74ce576c1b8648ee77dd135a7d5ec4bbe47c4d071d1659fa6e6406bc1b31fed",
+    "src/uav_vio_mission/src/mission_definition.cpp": "435c5aacad55ccbcfc6e86a5fb90a06e010fbe271528f662d63c3c19e0ee9682",
+    "src/uav_vio_mission/src/mission_runtime.cpp": "11a6bb8663edee56500d4b4a197aa34a81f271a3d9d663faa0d53e1700c8eafb",
+    "src/uav_vio_mission/src/vio_mission.cpp": "9a3a24f91e37782b924285ed0676eff5fc8f6c351d296fbb6dc815dabbbd6462",
+    "src/uav_vio_sim/config/d435i_bridge.yaml": "937ade8d7c23027c50ff4bbf9c0788babc46a27b8c920acab4fba5ce332e4d5b",
+    "src/uav_vio_sim/models/d435i_sensor/model.sdf": "22f158b34ff5b9c24e480876bb43541b7cf916a597348da9e1183758709dd28f"
+  },
+  "final_report": {
+    "path": "docs/validation/ASTRA_ACCEPTANCE_20261021.md",
+    "sha256": "c29dd785b889fc1c91a29a562401b090d407af132b8dc13f3d08be52c6aaa332"
+  }
+}

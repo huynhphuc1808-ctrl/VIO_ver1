@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "mission": {
+    "items": [
+      {
+        "type": "localTakeoff",
+        "altitude_m": 2.0
+      },
+      {
+        "type": "orbit",
+        "radius_m": 2.0,
+        "speed_m_s": 1.0,
+        "direction": "clockwise",
+        "laps": 2,
+        "radial_tolerance_m": 0.5
+      },
+      {
+        "type": "localHold",
+        "duration_s": 3.0,
+        "altitude_m": 2.0
+      },
+      {
+        "type": "land"
+      }
+    ]
+  }
+}

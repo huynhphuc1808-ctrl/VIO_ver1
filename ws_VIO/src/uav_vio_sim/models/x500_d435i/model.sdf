@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.9">
+  <model name="x500_d435i">
+    <include merge="true">
+      <uri>x500</uri>
+    </include>
+
+    <include merge="true">
+      <uri>model://d435i_sensor</uri>
+      <pose relative_to="base_link">0.08 0 -0.10 0 1.57079632679 0</pose>
+    </include>
+
+    <include>
+      <uri>model://feature_ground</uri>
+    </include>
+
+    <include>
+      <uri>model://feature_wall</uri>
+      <pose>5 0 0 0 0 0</pose>
+    </include>
+
+    <joint name="d435i_fixed_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>d435_link</child>
+    </joint>
+  </model>
+</sdf>

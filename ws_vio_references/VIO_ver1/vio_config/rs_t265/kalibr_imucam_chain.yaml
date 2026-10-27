@@ -1,0 +1,38 @@
+%YAML:1.0
+
+cam0:
+  # Gazebo's camera sensor is pitched down, while VIO_ver1 projects points in
+  # the optical frame convention: x-right, y-down, z-forward.
+  T_imu_cam: # rotation from camera to IMU R_CtoI, position of camera in IMU p_CinI
+    - [0.0, -1.0, 0.0, 0.0]
+    - [-1.0, 0.0, 0.0, 0.03]
+    - [0.0, 0.0, -1.0, 0.0]
+    - [0.0, 0.0, 0.0, 1.0]
+  cam_overlaps: [1]
+  camera_model: pinhole
+  distortion_coeffs: [0.0, 0.0, 0.0, 0.0]
+  distortion_model: radtan
+  intrinsics: [320.2549362182617, 320.25492668151855, 320.0, 240.0]
+  resolution: [640, 480]
+  rostopic: /t265/left/image_raw
+  timeshift_cam_imu: 0.0
+
+cam1:
+  T_imu_cam: # rotation from camera to IMU R_CtoI, position of camera in IMU p_CinI
+    - [0.0, -1.0, 0.0, 0.0]
+    - [-1.0, 0.0, 0.0, -0.03]
+    - [0.0, 0.0, -1.0, 0.0]
+    - [0.0, 0.0, 0.0, 1.0]
+  T_cn_cnm1:
+    - [1.0, 0.0, 0.0, 0.06]
+    - [0.0, 1.0, 0.0, 0.0]
+    - [0.0, 0.0, 1.0, 0.0]
+    - [0.0, 0.0, 0.0, 1.0]
+  cam_overlaps: [0]
+  camera_model: pinhole
+  distortion_coeffs: [0.0, 0.0, 0.0, 0.0]
+  distortion_model: radtan
+  intrinsics: [320.2549362182617, 320.25492668151855, 320.0, 240.0]
+  resolution: [640, 480]
+  rostopic: /t265/right/image_raw
+  timeshift_cam_imu: 0.0

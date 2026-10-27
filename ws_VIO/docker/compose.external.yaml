@@ -1,0 +1,18 @@
+# Linux runtime integration: dependencies are mounted by compose.yaml. Reuse PX4,
+# and detect an Agent already running on the host. See DOCKER.md before use.
+services:
+  vio:
+    pid: host
+    environment:
+      PX4_DIR: ${PX4_DIR:?Set PX4_DIR to the existing absolute PX4 path}
+    volumes:
+      - type: bind
+        source: ${PX4_DIR:?Set PX4_DIR}
+        target: ${PX4_DIR:?Set PX4_DIR}
+        bind:
+          create_host_path: false
+      - type: bind
+        source: /tmp/uav_vio_xrce_${MICRO_XRCE_PORT:-8888}.lock
+        target: /tmp/uav_vio_xrce_${MICRO_XRCE_PORT:-8888}.lock
+        bind:
+          create_host_path: false

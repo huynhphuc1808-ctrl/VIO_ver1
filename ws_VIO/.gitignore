@@ -1,0 +1,40 @@
+# Local assistant instructions and working material
+.agent/
+.agents/
+.codex/
+AGENTS.md
+codex.md
+CODEX_HANDOFF.md
+docs/CODEX_PX4_WORKFLOW.md
+.vscode/
+
+# ROS 2 / colcon generated output at any depth
+build/
+install/
+log/
+
+# Python generated output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Runtime data
+*.bag
+*.db3
+*.mcap
+
+# Docker machine-specific settings
+docker/.env
+docker/*.local.yaml
+docker/*.xauth
+
+
+# Các README không đưa lên Git
+T265_VIO_TECHNICAL_EXTRACTION.md
+GPS_DENIED_PX4_ROS2.md
+GPS_DENIED_T265_VIO_FULL_README.md
+codex.md
+software_architecture_compact_vio_px4.md
+
+# Preserved pre-restructure build/install caches
+.artifacts/

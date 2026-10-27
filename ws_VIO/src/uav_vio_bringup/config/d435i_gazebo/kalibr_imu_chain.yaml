@@ -1,0 +1,23 @@
+%YAML:1.0
+
+imu0:
+  T_i_b:
+    - [1.0, 0.0, 0.0, 0.0]
+    - [0.0, 1.0, 0.0, 0.0]
+    - [0.0, 0.0, 1.0, 0.0]
+    - [0.0, 0.0, 0.0, 1.0]
+  # Gazebo per-sample standard deviations converted to continuous noise
+  # densities using sigma_density = sigma_sample / sqrt(update_rate).
+  accelerometer_noise_density: 0.0007071067811865475
+  accelerometer_random_walk: 1.0e-06
+  gyroscope_noise_density: 0.00007071067811865475
+  gyroscope_random_walk: 1.0e-07
+  rostopic: /vio/sensors/d435/imu
+  time_offset: 0.0
+  update_rate: 200
+  model: "kalibr"
+  Tw: [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+  R_IMUtoGYRO: [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+  Ta: [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+  R_IMUtoACC: [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+  Tg: [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]

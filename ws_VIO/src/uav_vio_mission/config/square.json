@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "mission": {
+    "items": [
+      {"type": "localTakeoff", "altitude_m": 2.0},
+      {"type": "localGoto", "frame": "mission_ned", "x_m": 2.0, "y_m": 0.0, "z_m": -2.0, "max_horizontal_speed_m_s": 1.0},
+      {"type": "localGoto", "frame": "mission_ned", "x_m": 2.0, "y_m": 2.0, "z_m": -2.0, "max_horizontal_speed_m_s": 1.0},
+      {"type": "localGoto", "frame": "mission_ned", "x_m": 0.0, "y_m": 2.0, "z_m": -2.0, "max_horizontal_speed_m_s": 1.0},
+      {"type": "localGoto", "frame": "mission_ned", "x_m": 0.0, "y_m": 0.0, "z_m": -2.0, "max_horizontal_speed_m_s": 1.0},
+      {"type": "localHold", "duration_s": 2.0},
+      {"type": "land"}
+    ]
+  }
+}

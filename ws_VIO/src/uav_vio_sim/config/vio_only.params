@@ -1,0 +1,26 @@
+# PX4 50dabd8 local VIO-only EKF2 external-vision profile.
+# GNSS sensors and fusion are disabled. EKF2 and its native loss checks remain in control.
+EKF2_GPS_MODE 0
+EKF2_GPS_CTRL 0
+# Fuse EV XY position, Z height, and 3D velocity; keep native PX4 yaw.
+EKF2_EV_CTRL 7
+# External-vision height reference (vision) from pinned PX4 50dabd8.
+EKF2_HGT_REF 3
+EKF2_BARO_CTRL 1
+EKF2_EV_NOISE_MD 0
+EKF2_EV_QMIN 1
+EKF2_EV_DELAY 0
+# Bridge output is already moved to base_link; preserve no extra lever arm.
+EKF2_EV_POS_X 0
+EKF2_EV_POS_Y 0
+EKF2_EV_POS_Z 0
+SYS_HAS_GPS 0
+SIM_GZ_EN_GPS 0
+SIM_GPS_USED 0
+SENS_EN_GPSSIM 0
+UXRCE_DDS_SYNCT 0
+# Headless autonomous SITL has no GCS; disable only the datalink-loss action.
+NAV_DLL_ACT 0
+# Preserve finite native PX4 position-loss checks.
+COM_POS_FS_EPH 5
+EKF2_NOAID_TOUT 5000000

@@ -1,0 +1,39 @@
+{
+  "log": "06_19_50.ulg",
+  "sha256": "1e461526144c0925d9ddf82f6fcf9cc9ba6382f5a513f0c0136690a3b16bd8b3",
+  "px4_git": "50dabd8faef300a4c408070be60f3ea5089bef08",
+  "checks": {
+    "gnss_and_vio_before_arm": true,
+    "mission_continues_without_gnss": true,
+    "gnss_recovers_with_vio": true,
+    "no_large_position_discontinuity": true,
+    "no_position_or_heading_reset_during_aided_mission": true,
+    "native_both_loss_failsafe_and_disarm": true
+  },
+  "result": "PASS",
+  "phase_time_s": {
+    "arm": 18.988,
+    "gnss_out": 33.572,
+    "gnss_back": 38.556,
+    "both_out": 47.612,
+    "px4_descend": 51.724,
+    "disarm": 57.564
+  },
+  "prearm_joint_fusion_s": 2.972,
+  "gnss_outage_mission_sequences": [
+    1,
+    2
+  ],
+  "max_position_step_m": 0.009223146364092827,
+  "max_position_motion_residual_m": 0.0045445451249049975,
+  "jump_limit_m": 0.5,
+  "aided_mission_reset_counts": {
+    "xy_reset_counter": 0,
+    "z_reset_counter": 0,
+    "heading_reset_counter": 0
+  },
+  "limitations": [
+    "Single SITL flight; not hardware or long-outage certification",
+    "Manual preflight gate; firmware does not require EV before arming"
+  ]
+}

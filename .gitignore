@@ -1,0 +1,27 @@
+# Generated ROS / CMake / Python output
+build/
+install/
+log/
+.artifacts/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+*.bag
+*.db3
+*.mcap
+*.ulg
+
+# Machine-local editor, assistant and credential material
+.vscode/
+.idea/
+.agent/
+.agents/
+.codex/
+AGENTS.md
+codex.md
+CODEX_HANDOFF.md
+CODEX_PX4_WORKFLOW.md
+.env
+*.local.yaml
+*.xauth
