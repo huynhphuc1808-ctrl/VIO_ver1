@@ -12,8 +12,9 @@ Vision sang PX4 và mission JSON dùng các controller/action có sẵn của PX
 | [ws_vio_references/VIO_ver1](ws_vio_references/VIO_ver1/MODULES.md) | Thuật toán với package `vio_core`, `vio_init`, `vio_msckf` và calibration baseline |
 | `ws_vio_references/px4_ros_com`, `translation_node` | Mã tham chiếu; không thuộc overlay của workflow chính |
 
-VIO_ver1 được đổi tên và tích hợp từ OpenVINS, giữ giấy phép GPL-3.0 và thông
-báo bản quyền của tác giả gốc. Phần đổi tên không thay đổi phép tính thuật toán.
+VIO_ver1 được đổi tên và tích hợp từ OpenVINS. Người duy trì xác nhận đã được
+các tác giả cho phép riêng để bỏ phần thông báo của OpenVINS trong bản tích hợp
+này. Phần đổi tên và chỉnh comment không thay đổi phép tính thuật toán.
 Xem [nguồn gốc và giấy phép](THIRD_PARTY_NOTICES.md).
 
 ## Lấy mã và build

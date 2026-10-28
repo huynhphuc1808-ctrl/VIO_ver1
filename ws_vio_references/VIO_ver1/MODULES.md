@@ -20,7 +20,8 @@ calibration D435i tại `ws_VIO/src/uav_vio_bringup/config/d435i_gazebo` và
 namespace `/vio_msckf`. Các launch ROS 1/dataset tùy chọn là tài liệu tham chiếu;
 workflow được tích hợp là ROS 2 Jazzy. Xem báo cáo kiểm chứng ở root repository.
 
-Giữ [LICENSE](LICENSE) và license thư viện đi kèm. Không copy `.git`, cache,
+MIT của [matplotlib-cpp](vio_core/src/plot/LICENSE) được giữ nguyên; phần thông
+báo OpenVINS được bỏ theo quyền riêng mà người duy trì xác nhận. Không copy `.git`, cache,
 `vio_eval`, `vio_data`; các script/launch ROS 1 đánh giá và config `rpng_sim` vẫn
 cần các phần đánh giá/dataset tùy chọn đó. Cấu hình T265 được giữ làm baseline.
 

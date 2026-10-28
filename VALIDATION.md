@@ -19,11 +19,11 @@ máy phát triển hiện có; chưa phải thử nghiệm cài từ đầu trê
 
 ## Giữ nguyên logic
 
-Đối chiếu 110 file C++/header/giấy phép của thuật toán với bản sao trước đổi
-tên: nội dung khớp sau khi áp dụng đúng ánh xạ tên kỹ thuật. Các thông báo bản
-quyền chung và điều khoản giấy phép được giữ nguyên; cập nhật thông tin tác giả
-cá nhân ở lần đóng gói tiếp theo được ghi bên dưới. Các phép tính, tham số, calibration và điều kiện
-thuật toán không được thay đổi. Cả 16 file C++/header của mission giống hệt
+Đợt đổi tên ban đầu đã đối chiếu 110 file C++/header/giấy phép với bản sao trước
+khi sửa. Sau cập nhật phần thông báo theo quyền riêng, việc so sánh token C/C++
+xác nhận không thay đổi nội dung ngoài comment và khoảng trắng. Các phép tính,
+tham số, calibration và điều kiện thuật toán không được thay đổi.
+Cả 16 file C++/header của mission giống hệt
 bản trước khi sửa, theo byte.
 
 ## Runtime sau đổi tên
@@ -73,11 +73,12 @@ file bổ sung, quyền thực thi, revision sai, Git của monorepo và cache s
 đều đạt. Full PX4/message/interface compatibility tiếp tục PASS.
 
 Danh sách C/C++ có 341 file: 16 trong `ws_VIO`, 174 trong `ws_px4` và 151 trong
-`ws_vio_references`; xem `CPP_SOURCE_INDEX.md`. Thông tin tác giả cá nhân được
-điều chỉnh theo sự cho phép riêng mà người duy trì bản tích hợp xác nhận đã
-nhận. Phần thay đổi C/C++ chỉ xóa đúng các dòng thông báo cá nhân được nêu;
-code còn lại giống hệt phiên bản trước. Thông báo của các tác giả khác,
-GPL-3.0 chung, MIT của matplotlib-cpp và BSD của PX4/Auterion vẫn được giữ.
+`ws_vio_references`; xem `CPP_SOURCE_INDEX.md`. Người duy trì sau đó xác nhận
+được các đồng tác giả OpenVINS cho phép bỏ các thông báo của phần mã này.
+Đã bỏ 107 khối thông báo OpenVINS ở bản review và đồng bộ phần tương ứng trong
+workspace gốc; token C/C++ ngoài comment không đổi. Thông tin tác giả và nhãn
+license trong ba package estimator được cập nhật theo cơ sở quyền riêng đã
+xác nhận. MIT của matplotlib-cpp và BSD của PX4/Auterion giữ nguyên.
 
 Đợt bổ sung này kiểm chứng tính đầy đủ của source và build checker; không có
 thay đổi thuật toán để tuyên bố cải thiện chất lượng hoặc hiệu năng, và không
