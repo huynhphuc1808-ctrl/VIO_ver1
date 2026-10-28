@@ -2,7 +2,6 @@
 /*
  * MIT License
  * Copyright (c) 2018 Kevin Eckenhoff
- * Copyright (c) 2018 Patrick Geneva
  * Copyright (c) 2018 Guoquan Huang
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy

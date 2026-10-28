@@ -1,0 +1,2170 @@
+{
+  "dependencies": {
+    "ws_px4/src/px4-ros2-interface-lib": {
+      "commit": "cd22f009c666063db26e82b607595ac8313f7ee7",
+      "excluded_upstream_paths": [
+        ".vscode/settings.json"
+      ],
+      "files": {
+        ".clang-format": {
+          "mode": "100644",
+          "sha256": "75fa55c0535cec5327ec35b961bad016a6d4365797f1680d2119cb1403be4fcc"
+        },
+        ".clang-format-ignore": {
+          "mode": "100644",
+          "sha256": "f7ffcdaf0b347af3f527fdcfca6115b13187dc15ea646fc35fbc23bf5f8b1853"
+        },
+        ".clang-tidy": {
+          "mode": "100644",
+          "sha256": "36dcdf5e77c415a9e656f9bf2fc9270f8c16cd3f853d99fd4282adee77d3070f"
+        },
+        ".github/workflows/build-publish-debian-packages.yml": {
+          "mode": "100644",
+          "sha256": "e13edcbcef42f0a4b0c4dea60dd7b089d442b496dbf90baae70da814cbdf7f7b"
+        },
+        ".github/workflows/build_and_test.yml": {
+          "mode": "100644",
+          "sha256": "82fcdd8d0abfae32a0b659ff43eca743514097c3470e2fdda8f81b5e5a542639"
+        },
+        ".github/workflows/create_release_branch.yml": {
+          "mode": "100644",
+          "sha256": "7e50172fa2f24a6525ca4b1ee22c8911ad355924c58c3b10da46ed52618623c6"
+        },
+        ".github/workflows/lint.yml": {
+          "mode": "100644",
+          "sha256": "9064abf019ab42112cb2a340d3039865d3a4d5f7da381cefff676f1f0e47f13f"
+        },
+        ".github/workflows/px4_build.yml": {
+          "mode": "100644",
+          "sha256": "64b84db733e50a84d634a03ba61a50f5bd167dab2eaca2c1bbc7374e503c7fa2"
+        },
+        ".github/workflows/validate_missions.yml": {
+          "mode": "100644",
+          "sha256": "844d82a07321f3954fe0d7fe617f5941bb0449a1a340b1424e86aaaf80f71ad0"
+        },
+        ".gitignore": {
+          "mode": "100644",
+          "sha256": "643d5fc4301d677da2169851f750a69440fe7c158b26d232268e4e094e1b6384"
+        },
+        ".pre-commit-config.yaml": {
+          "mode": "100644",
+          "sha256": "39a8bc85c9cb183041982134e3eed06193a796bb666f3646623fca70de959921"
+        },
+        "Doxyfile": {
+          "mode": "100644",
+          "sha256": "1d8c70f6b32f2c59e8fb2a565f0f475803c0d7ea4e15d5f1d304fed7b1dfaba7"
+        },
+        "LICENSE": {
+          "mode": "100644",
+          "sha256": "49d76a018cc5126421027894e5cd49423d7fee7821949ac072d20682ab57923b"
+        },
+        "README.md": {
+          "mode": "100644",
+          "sha256": "993e8f05e4a1ecbd25bd65dd101a4777c38027bf368799fdb9f170661da38b48"
+        },
+        "dependencies.repos": {
+          "mode": "100644",
+          "sha256": "06b1551ea0d9f037f3e2fef2ae77492ff0b9a2796eca31ab93dd92af132d272a"
+        },
+        "examples/cpp/modes/executor_with_multiple_modes/CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "e05a7209a08a3eb58ada77b6f2df839c6e9aecfec5a385bc4cd72b59d8079d74"
+        },
+        "examples/cpp/modes/executor_with_multiple_modes/include/executor.hpp": {
+          "mode": "100644",
+          "sha256": "226b58daa3c08379cc2e491fed8b4e6194d56c6bddced5058104dad715fe640b"
+        },
+        "examples/cpp/modes/executor_with_multiple_modes/include/modes.hpp": {
+          "mode": "100644",
+          "sha256": "271189535459d7a81b3bf53f5e69dac0828bc132dca15309888adc3148b67ef8"
+        },
+        "examples/cpp/modes/executor_with_multiple_modes/package.xml": {
+          "mode": "100644",
+          "sha256": "8da77b8e5eabd5d0fa88632efdacc5e922b8c58f4d4a97ecb6b5d39db104d3f8"
+        },
+        "examples/cpp/modes/executor_with_multiple_modes/src/main.cpp": {
+          "mode": "100644",
+          "sha256": "af7fade7da1906fa5779a7cd975a1c32cd1134015b1e09ddab4d76c76c11969d"
+        },
+        "examples/cpp/modes/fw_attitude/CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "287b649b1846cddb00786e36b1822baa9f325097703fec8d17907a1df1f27cbd"
+        },
+        "examples/cpp/modes/fw_attitude/include/mode.hpp": {
+          "mode": "100644",
+          "sha256": "735d83e9257ba6fbe513b1dbd1386c078f7e0f1ddcb7ff7e3ecea6d62af1c8e7"
+        },
+        "examples/cpp/modes/fw_attitude/package.xml": {
+          "mode": "100644",
+          "sha256": "42cc8f4b784edf5e844261af10ffc257dd198b1caefaf171c5717e0570f56845"
+        },
+        "examples/cpp/modes/fw_attitude/src/main.cpp": {
+          "mode": "100644",
+          "sha256": "6f41a3e0ddfa8c54705b9efc274325ecbf67cf47179fd020d9764cdd32c14ef7"
+        },
+        "examples/cpp/modes/goto/CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "d40d376dd32858dd930c5302a809ba2d96249541e6b0bc00b33fc2a4044a6047"
+        },
+        "examples/cpp/modes/goto/include/mode.hpp": {
+          "mode": "100644",
+          "sha256": "babf9f5d076ac5664eda4e1c0766bcd566d77aa3465f7407ed173374db0fff27"
+        },
+        "examples/cpp/modes/goto/package.xml": {
+          "mode": "100644",
+          "sha256": "c2f124592fe0f3ed73fb33813bd19ea9c39254505da3223a4fab3348e4b403ca"
+        },
+        "examples/cpp/modes/goto/src/main.cpp": {
+          "mode": "100644",
+          "sha256": "05c2db913cd4b3f0a096852b3311a838dbb0b6aa328f4ce5b7a2027f8579ca49"
+        },
+        "examples/cpp/modes/goto_global/CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "eba251b842e34d0578e5101c10c962a99816e9c2f4bb699720f7f1aa7e833fb4"
+        },
+        "examples/cpp/modes/goto_global/include/mode.hpp": {
+          "mode": "100644",
+          "sha256": "83888b02449d3ab75338f69d534d8ae116af4bd0e220c392d2611ec50ce6b964"
+        },
+        "examples/cpp/modes/goto_global/package.xml": {
+          "mode": "100644",
+          "sha256": "99dff8336a89ff6c06399536112f777fbea9705f29f3a3b02d0a0b93af98ad15"
+        },
+        "examples/cpp/modes/goto_global/src/main.cpp": {
+          "mode": "100644",
+          "sha256": "b0d7065907f7b43a32ba000857d4ceddb62d72cafc10d267e5686f8299bd32b4"
+        },
+        "examples/cpp/modes/manual/CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "6324bde345a9eac5fd6d85059cec9f4793d8fbd0dfb72aebc9e795ea1f731d9a"
+        },
+        "examples/cpp/modes/manual/include/mode.hpp": {
+          "mode": "100644",
+          "sha256": "2ba794ab6313904246369f7d481424e30fa32108bddbac1e52831405297e410a"
+        },
+        "examples/cpp/modes/manual/package.xml": {
+          "mode": "100644",
+          "sha256": "ef405ce21355d0cc9af13d1de23a30909bf5035d0a25a8c67eafa7b2ce41229d"
+        },
+        "examples/cpp/modes/manual/src/main.cpp": {
+          "mode": "100644",
+          "sha256": "beb59498174f5c5f094771b434788937cad105bbd22af8cbec9cea08f09d6806"
+        },
+        "examples/cpp/modes/mission/CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "719d0020087963f7320fea6526380062497b94afda04e41b8159ecbbecf299eb"
+        },
+        "examples/cpp/modes/mission/include/actions/basic.hpp": {
+          "mode": "100644",
+          "sha256": "611a29a245cec2d3e85ae9ae7a08bab9fd34face13c28cba3a8980c95120da1b"
+        },
+        "examples/cpp/modes/mission/include/actions/camera_trigger.hpp": {
+          "mode": "100644",
+          "sha256": "96b913c3214c2b065f6f2f9c56ef81dae3aed5cd56cc3686af66f81affe132c7"
+        },
+        "examples/cpp/modes/mission/include/actions/mode.hpp": {
+          "mode": "100644",
+          "sha256": "44d082c844729673b88415997057ca851d70b481b404386c34df23b11ed27337"
+        },
+        "examples/cpp/modes/mission/include/actions/pickup.hpp": {
+          "mode": "100644",
+          "sha256": "802af336f990004e9057ba3a7ccf95cfe0b448210e0d14d60cc7a229a0df39e1"
+        },
+        "examples/cpp/modes/mission/include/actions/trajectory.hpp": {
+          "mode": "100644",
+          "sha256": "4e7dd7f4c3913c4c3589e873d9aee942ec28589b89d188a75ff61ca38b3e45d6"
+        },
+        "examples/cpp/modes/mission/include/mission.hpp": {
+          "mode": "100644",
+          "sha256": "b87e247fab336fee020fb2a9bc07278e8cab77fd080ea28345f2a95237fdb15a"
+        },
+        "examples/cpp/modes/mission/package.xml": {
+          "mode": "100644",
+          "sha256": "489c5e97d93ecfac16cca656f6cf1f43a5221207f0fb624bf5244d163f059edb"
+        },
+        "examples/cpp/modes/mission/src/main.cpp": {
+          "mode": "100644",
+          "sha256": "1b905f97cf4c0ba8972f284109bc67c840b5999db09dca1ecb33c881e472cd31"
+        },
+        "examples/cpp/modes/mode_with_executor/CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "66491cbf6147b4e09c7ededc23ff8cadd4a58bb36778f9170d9e17dd656e1bf3"
+        },
+        "examples/cpp/modes/mode_with_executor/include/mode.hpp": {
+          "mode": "100644",
+          "sha256": "e2ffcb47c3c905a9db00c89bd7f3c20511a0c74c02b44f1a7b2f7c4c379e820a"
+        },
+        "examples/cpp/modes/mode_with_executor/package.xml": {
+          "mode": "100644",
+          "sha256": "13c5fc11275e96765727c091b65639225d6b8cab84d205e74f0f157056baccaf"
+        },
+        "examples/cpp/modes/mode_with_executor/src/main.cpp": {
+          "mode": "100644",
+          "sha256": "2470dc02539e94301899a792f3131d36116dae8621e6443996b62afa7a8604ff"
+        },
+        "examples/cpp/modes/rover_velocity/CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "efbd534948be034baca33210e1cc1f43d3abdd69cd7db826c7a9b3776e17e9ee"
+        },
+        "examples/cpp/modes/rover_velocity/include/mode.hpp": {
+          "mode": "100644",
+          "sha256": "fc6df5690bf2ccd7ee004d4a287c4d3818cd31ea107fd2ae59399bf5bb17413b"
+        },
+        "examples/cpp/modes/rover_velocity/package.xml": {
+          "mode": "100644",
+          "sha256": "8d5edfaa961b44b708413524e63d7c545f0a27e7bbb15658a071c61472e621ed"
+        },
+        "examples/cpp/modes/rover_velocity/src/main.cpp": {
+          "mode": "100644",
+          "sha256": "64e95ea036078ed33092e04578d4feb856aa40e2a22cc84e052c6c0ad23c8933"
+        },
+        "examples/cpp/modes/rtl_replacement/CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "e92a94a01fbae4fe7139c164ed0a7b6b3a3de498f0a704d7773f7a9f92abdb0d"
+        },
+        "examples/cpp/modes/rtl_replacement/include/mode.hpp": {
+          "mode": "100644",
+          "sha256": "217451617fdca2bd69db32f522da3415f48d605debcd6608d837b1fe92b31561"
+        },
+        "examples/cpp/modes/rtl_replacement/package.xml": {
+          "mode": "100644",
+          "sha256": "2f99c29f2ecef29a25ad3dbf9c5fe0cc3bcfc47fd6b6f0186838573f970d857e"
+        },
+        "examples/cpp/modes/rtl_replacement/src/main.cpp": {
+          "mode": "100644",
+          "sha256": "91963a17b0c105d94920b737131d7cbb1c6c86c2cefedd12fbf769cc9f4adee3"
+        },
+        "examples/cpp/modes/vtol/CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "cf129c529a848ea4d7a8be9847b06aa0dc33e246d96c8731078d3c05b4efdc87"
+        },
+        "examples/cpp/modes/vtol/include/mode.hpp": {
+          "mode": "100644",
+          "sha256": "58bd6906d60dda8e1333d7345ac55f27d587291fe24ad99e548f30ffe3f8b290"
+        },
+        "examples/cpp/modes/vtol/package.xml": {
+          "mode": "100644",
+          "sha256": "a52bcbfc8b7593f3a02b8e68cd862114351b60c3620f921335aaa41065fa9d57"
+        },
+        "examples/cpp/modes/vtol/src/main.cpp": {
+          "mode": "100644",
+          "sha256": "9a18d516f34a2befd4f5ab495dac9ad2186cbe9d605982a406397ced25dbf62d"
+        },
+        "examples/cpp/navigation/global_navigation/CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "61fd5c1fbde36b3526be7e91c9e4685022b894210b377b22087de9cbf86c5f52"
+        },
+        "examples/cpp/navigation/global_navigation/include/global_navigation.hpp": {
+          "mode": "100644",
+          "sha256": "7ffb067555b544948787140385a4ffe21b3f52e1fe13154e4b138d3a3735eedb"
+        },
+        "examples/cpp/navigation/global_navigation/package.xml": {
+          "mode": "100644",
+          "sha256": "d69bf59fb7c0c42570c2a9b1303d6026cc4ed4fe93b9e85ac1c6857d656f2b7c"
+        },
+        "examples/cpp/navigation/global_navigation/src/main.cpp": {
+          "mode": "100644",
+          "sha256": "07cc918dc26fd582df6b184ff24b87634c7bfe2dcd17a47aa019b2207bb446b2"
+        },
+        "examples/cpp/navigation/local_navigation/CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "0ae53d120ed466662f78484a3734ca9c094745c0368f46dc393ad3d0fd9423e7"
+        },
+        "examples/cpp/navigation/local_navigation/include/local_navigation.hpp": {
+          "mode": "100644",
+          "sha256": "83d990d77fe90cd366f0a63aec03cdb55ebd5c8657a90f06a3257d47469e44d6"
+        },
+        "examples/cpp/navigation/local_navigation/package.xml": {
+          "mode": "100644",
+          "sha256": "dbdcd1eeedd73e2e623d831964c30fbb641aab132f2818a1d2f1327d826161d6"
+        },
+        "examples/cpp/navigation/local_navigation/src/main.cpp": {
+          "mode": "100644",
+          "sha256": "cf1d67b63ed83f7c3f8b5ee66831e73b0a490d72c1fbbffd5f4924214d71c1ec"
+        },
+        "examples/python/modes/goto/example_mode_goto_py/__init__.py": {
+          "mode": "100644",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "examples/python/modes/goto/example_mode_goto_py/mode.py": {
+          "mode": "100644",
+          "sha256": "07e298638c875ca2ee4e55cda073b14b0b3c80f359de291b772681b153e501d3"
+        },
+        "examples/python/modes/goto/package.xml": {
+          "mode": "100644",
+          "sha256": "fa5aaf5d92c3913f2f2456566cd8a8d249d19b90a6f108906d9d153744f0f283"
+        },
+        "examples/python/modes/goto/resource/example_mode_goto_py": {
+          "mode": "100644",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "examples/python/modes/goto/setup.cfg": {
+          "mode": "100644",
+          "sha256": "fa3414c7f22c964e60b9c09cd77c6b55abb57944e8b6d153515feeafb8476ab9"
+        },
+        "examples/python/modes/goto/setup.py": {
+          "mode": "100644",
+          "sha256": "da3ec3907699e9b0593ecafb7876ebaf23562606653d5cff2c875529d52a8a9d"
+        },
+        "examples/python/modes/goto_with_rclpy/example_mode_with_rclpy_py/__init__.py": {
+          "mode": "100644",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "examples/python/modes/goto_with_rclpy/example_mode_with_rclpy_py/test.py": {
+          "mode": "100644",
+          "sha256": "9af40e0cc7e6d139673eaaa7dc6e7331b0db39ca3ea72a347b304d2043d88e11"
+        },
+        "examples/python/modes/goto_with_rclpy/package.xml": {
+          "mode": "100644",
+          "sha256": "81c55a429058095fa6f0a25167d3d5543f6e352695f201a76b282533c2b176d7"
+        },
+        "examples/python/modes/goto_with_rclpy/resource/example_mode_with_rclpy_py": {
+          "mode": "100644",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "examples/python/modes/goto_with_rclpy/setup.cfg": {
+          "mode": "100644",
+          "sha256": "6621fdd25e2961ef42218a4aa38d74c007e0eb41d6f7971739f51ac508afd64c"
+        },
+        "examples/python/modes/goto_with_rclpy/setup.py": {
+          "mode": "100644",
+          "sha256": "33d3b13be41d7f1df91922f0478f19a0818915d14a16426455477c44ccc0bc55"
+        },
+        "mission/examples/pickup.json": {
+          "mode": "100644",
+          "sha256": "ae180f615eeaca79e3cccb4692f5bc4bcc27fc59f61dfddcc27e38313ca93cbc"
+        },
+        "mission/schema.yaml": {
+          "mode": "100644",
+          "sha256": "e3230e58ca61885557123f4d059941e71659127aec59a77c41cab4c0942a7926"
+        },
+        "px4_ros2_cpp/CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "c0be59def58718e3ae71f02c3ebf33f06f40f6bd5a6475d2034564bf3c1c7ad8"
+        },
+        "px4_ros2_cpp/include/px4_ros2/common/context.hpp": {
+          "mode": "100644",
+          "sha256": "a8ef367f8b7a3aa5346b5697d338c6db7656e2d484b4c9dfb5186c97310df05b"
+        },
+        "px4_ros2_cpp/include/px4_ros2/common/exception.hpp": {
+          "mode": "100644",
+          "sha256": "0c224ba9409cec5bba2d97d30b73897df5f6cadcb91038f48fe7c885fa28cbff"
+        },
+        "px4_ros2_cpp/include/px4_ros2/common/frame.hpp": {
+          "mode": "100644",
+          "sha256": "62f02f46a30cb92756f0a24dbcfc5f4af2e5159dea0870f04c04a85e5d588e6e"
+        },
+        "px4_ros2_cpp/include/px4_ros2/common/requirement_flags.hpp": {
+          "mode": "100644",
+          "sha256": "423d51b5e2a6776d7e6ac72b6e9e28f1efc432606a2e493d5513c15eb6e53541"
+        },
+        "px4_ros2_cpp/include/px4_ros2/common/setpoint_base.hpp": {
+          "mode": "100644",
+          "sha256": "bb6925b9da1fcd6395fb1c56dbaa22ee7a5c5712d383792c2eb99d226d429984"
+        },
+        "px4_ros2_cpp/include/px4_ros2/components/events.hpp": {
+          "mode": "100644",
+          "sha256": "e612aedc773682622ccead4411596414133e01bf129b1f6bf9cfdb0c36bbdf64"
+        },
+        "px4_ros2_cpp/include/px4_ros2/components/groups.dox": {
+          "mode": "100644",
+          "sha256": "5fcd8bb5c5b677430d387d41f4e6c47e6335cbd7a35e3f9faa45060da69bbd84"
+        },
+        "px4_ros2_cpp/include/px4_ros2/components/health_and_arming_checks.hpp": {
+          "mode": "100644",
+          "sha256": "a530701d892e424af61b05d575c22fd405298b3146f4395ec43d578834b7ac2b"
+        },
+        "px4_ros2_cpp/include/px4_ros2/components/manual_control_input.hpp": {
+          "mode": "100644",
+          "sha256": "01fa6c101e6ac0a6a4bb7a3ba2283dc2ad2c27965f190ba5edcec4f3acfcf726"
+        },
+        "px4_ros2_cpp/include/px4_ros2/components/message_compatibility_check.hpp": {
+          "mode": "100644",
+          "sha256": "d56d2909ca43f9f8e7e8e75571f5aef439ac42110fbee3e492f0dcbfbe33e72c"
+        },
+        "px4_ros2_cpp/include/px4_ros2/components/mode.hpp": {
+          "mode": "100644",
+          "sha256": "0982d37d1a7d961414d1eafced04717bc15d19ccd28b2e756dbf8f6e1efa296c"
+        },
+        "px4_ros2_cpp/include/px4_ros2/components/mode_executor.hpp": {
+          "mode": "100644",
+          "sha256": "1545133863a8a248a4fc7702ad3098b9747dda4555235013f5676123956a7005"
+        },
+        "px4_ros2_cpp/include/px4_ros2/components/node_with_mode.hpp": {
+          "mode": "100644",
+          "sha256": "44bdacc7be8b950a28fde22ca6a28f70c7398c0124f1ef847062b6cbfa5c6d3d"
+        },
+        "px4_ros2_cpp/include/px4_ros2/components/overrides.hpp": {
+          "mode": "100644",
+          "sha256": "a792af185c6a13f326570ca5963606a6c26102cac536eb4567758e2031163e1b"
+        },
+        "px4_ros2_cpp/include/px4_ros2/components/shared_subscription.hpp": {
+          "mode": "100644",
+          "sha256": "edd76008ebfce0c9f5e5ba5eab817a58bc91b8eef9fbb01f970bfa6e47713121"
+        },
+        "px4_ros2_cpp/include/px4_ros2/components/wait_for_fmu.hpp": {
+          "mode": "100644",
+          "sha256": "13078a1b246d810079b95cf28789f5bebb2a9eb00bb69a05cfc1f0386d392d90"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/groups.dox": {
+          "mode": "100644",
+          "sha256": "0a4ae560edc0ac203ecce5a67869a19f3aa89ac9d6a8551e5ca56023150551d8"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/peripheral_actuators.hpp": {
+          "mode": "100644",
+          "sha256": "8d054da407e6257ac5e270e0976cd4c7373fd2aec54678a98ffc60dd51e0f6af"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/setpoint_types/direct_actuators.hpp": {
+          "mode": "100644",
+          "sha256": "3176cb5db01ee2b5397755ee7a00f9b5b48cd5a509d0a734583e745ee99de583"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/setpoint_types/experimental/attitude.hpp": {
+          "mode": "100644",
+          "sha256": "bfd2660866eb15ef27e9c9e17bd038c19a0908908cdafb357d51786d37bf344b"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/setpoint_types/experimental/rates.hpp": {
+          "mode": "100644",
+          "sha256": "ef5faafabd3c35428b86a720522d54e1d3bbf8065b1a83d3c93a4b82ee90d7f4"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/setpoint_types/experimental/rover/position.hpp": {
+          "mode": "100644",
+          "sha256": "79a746eb0d13d2d5f899fc039bec195f02a68f7182dbff80eb6010d04f7470c6"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/setpoint_types/experimental/rover/speed_attitude.hpp": {
+          "mode": "100644",
+          "sha256": "9b25890850d096705263913e6e1644063620faa818ae8ae71541af89422c7e40"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/setpoint_types/experimental/rover/speed_rate.hpp": {
+          "mode": "100644",
+          "sha256": "628a6ec184c1fad60352cc543f341db6e41163620d6dcb62fcf5329f5a536f08"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/setpoint_types/experimental/rover/speed_steering.hpp": {
+          "mode": "100644",
+          "sha256": "12e27dd43cf2c8ebd7c3d3af18b7ea4ab7fb4615ea7df87fb0ae8e5ee7963a24"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/setpoint_types/experimental/rover/throttle_attitude.hpp": {
+          "mode": "100644",
+          "sha256": "87901578059c8266f0cc230731aaa3687cf94b8a8e7b0b330198c94e7ee65149"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/setpoint_types/experimental/rover/throttle_rate.hpp": {
+          "mode": "100644",
+          "sha256": "a56ccffb65624552afe6b5393c9719c00ed776d30f14acafea257bdd3ab19dc9"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/setpoint_types/experimental/rover/throttle_steering.hpp": {
+          "mode": "100644",
+          "sha256": "524c5091b624b2fb36a0a9aa4b89a61453635050ae2b2bc9182efa28d94828b4"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/setpoint_types/experimental/trajectory.hpp": {
+          "mode": "100644",
+          "sha256": "e53efb2f1c6ba826f7c276cac1d76450f08ee06ac1ff544d51f132a605810be4"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/setpoint_types/fixedwing/lateral_longitudinal.hpp": {
+          "mode": "100644",
+          "sha256": "de27dfd34737efa16b72d8597d3232b99d23a1e0a23de0ef1d49245c5ac80d21"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/setpoint_types/groups.dox": {
+          "mode": "100644",
+          "sha256": "c99ac6b843082b448fe59bfee9016d9911e398b09300d026e539f15fee1da46b"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/setpoint_types/multicopter/goto.hpp": {
+          "mode": "100644",
+          "sha256": "9834769aebcd4f908f821898f92e80898f500c990739c5c15ce049a7ae4dc252"
+        },
+        "px4_ros2_cpp/include/px4_ros2/control/vtol.hpp": {
+          "mode": "100644",
+          "sha256": "85ee068e50da62ae159750ea745abd9245b364cb4abcbc09a6ddfb54c8203658"
+        },
+        "px4_ros2_cpp/include/px4_ros2/mission/actions/action.hpp": {
+          "mode": "100644",
+          "sha256": "6ecc8c440136a703141816a817be86a64ba2ddfdaaa798637d67a795ac1c57f2"
+        },
+        "px4_ros2_cpp/include/px4_ros2/mission/actions/default_actions.hpp": {
+          "mode": "100644",
+          "sha256": "d23ce34135a8cb430c47b663617fec0dcbc24f8b9514b9211668244ac8d1a0ac"
+        },
+        "px4_ros2_cpp/include/px4_ros2/mission/actions/groups.dox": {
+          "mode": "100644",
+          "sha256": "745e474a2e869a86fc12cca1c44f271ed99455f7e8a57e1697b7e7c75510f54b"
+        },
+        "px4_ros2_cpp/include/px4_ros2/mission/groups.dox": {
+          "mode": "100644",
+          "sha256": "97d18bba6459fff5bc94785d8a5ccfad0149775facba2d0b2f88e01de2d0b5df"
+        },
+        "px4_ros2_cpp/include/px4_ros2/mission/mission.hpp": {
+          "mode": "100644",
+          "sha256": "a7c4405df01f4df6208f5eba57f7dc680a94549c8ba6ddc284dff3528d505b08"
+        },
+        "px4_ros2_cpp/include/px4_ros2/mission/mission_executor.hpp": {
+          "mode": "100644",
+          "sha256": "b7e016b16b9c4dfa6bbc6bf8337940aeb4eb927f28a416660cd5ba5d004db0f2"
+        },
+        "px4_ros2_cpp/include/px4_ros2/mission/trajectory/multicopter/groups.dox": {
+          "mode": "100644",
+          "sha256": "cfb1909959681281eccc78e30387fe17d8508ed2e7b971826d50b86e171bbd12"
+        },
+        "px4_ros2_cpp/include/px4_ros2/mission/trajectory/multicopter/waypoint_trajectory_executor.hpp": {
+          "mode": "100644",
+          "sha256": "fda30e65d94ed3c9ccdcdbf83cd89d5e27b7bb68f9a290b1c88e4086495d79d2"
+        },
+        "px4_ros2_cpp/include/px4_ros2/mission/trajectory/trajectory_executor.hpp": {
+          "mode": "100644",
+          "sha256": "b5d5d2601d2fdcad52309b9fef5e7d39373e53a530536b90fce4c02ea346de38"
+        },
+        "px4_ros2_cpp/include/px4_ros2/navigation/experimental/global_position_measurement_interface.hpp": {
+          "mode": "100644",
+          "sha256": "3ce070c6d001115628b0a4009a06b78abdc1270fdd07e7760ee471d76f789c21"
+        },
+        "px4_ros2_cpp/include/px4_ros2/navigation/experimental/local_position_measurement_interface.hpp": {
+          "mode": "100644",
+          "sha256": "8cfef36bc49cf7381e545d85cf3c19c94aa24393fca6e2f66cb2ebbfc2b29f6a"
+        },
+        "px4_ros2_cpp/include/px4_ros2/navigation/experimental/navigation_interface_base.hpp": {
+          "mode": "100644",
+          "sha256": "7224b701bc8f3fe9139d166d824f7e247d4830e6ca8a5377970981cecd37b1c2"
+        },
+        "px4_ros2_cpp/include/px4_ros2/navigation/groups.dox": {
+          "mode": "100644",
+          "sha256": "12efb996438a23fe2620451d068666bd82f74695269473183c2c8f6e1613400c"
+        },
+        "px4_ros2_cpp/include/px4_ros2/odometry/airspeed.hpp": {
+          "mode": "100644",
+          "sha256": "3e0afee78fe37648b032b22408d77b6b2b3c2f2724c2f32e6cc8c48306edce0b"
+        },
+        "px4_ros2_cpp/include/px4_ros2/odometry/angular_velocity.hpp": {
+          "mode": "100644",
+          "sha256": "08162d24ef5950f43b5067c6bd7e288567650c3e70dece3c63945ccecdbcf85a"
+        },
+        "px4_ros2_cpp/include/px4_ros2/odometry/attitude.hpp": {
+          "mode": "100644",
+          "sha256": "896ae77982eadf6fe086638acbe0a5f4575526b0253bf1477828040e2a251359"
+        },
+        "px4_ros2_cpp/include/px4_ros2/odometry/global_position.hpp": {
+          "mode": "100644",
+          "sha256": "0a94bd5074956a6d84cfab71f3a1b2616f839254e5a89537bdefa611da3a4eb8"
+        },
+        "px4_ros2_cpp/include/px4_ros2/odometry/groups.dox": {
+          "mode": "100644",
+          "sha256": "6aae5c78e8d69db603df1ce4df40a7630d5af4599275e576cdcd8aa5ab39d10f"
+        },
+        "px4_ros2_cpp/include/px4_ros2/odometry/local_position.hpp": {
+          "mode": "100644",
+          "sha256": "43e33a9baac776b9d82b5e49892d9f378f4ec1d746301930c1c9cd32dcb0eba2"
+        },
+        "px4_ros2_cpp/include/px4_ros2/odometry/odometry.hpp": {
+          "mode": "100644",
+          "sha256": "58b874246e30a1867b2e1773e585ae191761d44dcc9373601dfe0f2b37ddd004"
+        },
+        "px4_ros2_cpp/include/px4_ros2/third_party/nlohmann/json.hpp": {
+          "mode": "100644",
+          "sha256": "deaad17c5ee42422a12c7e9c0b17cb6c45ee567090bd83177f4e5f0d4d244b35"
+        },
+        "px4_ros2_cpp/include/px4_ros2/third_party/nlohmann/json_fwd.hpp": {
+          "mode": "100644",
+          "sha256": "246519aa5ab4e886bd9a3e194e974ad372233ea353ec4f433ce23d612ac46e80"
+        },
+        "px4_ros2_cpp/include/px4_ros2/utils/frame_conversion.hpp": {
+          "mode": "100644",
+          "sha256": "38f9f326b91a4d6d1108d17eca5d8d312643f8b526d953c81074557af405628a"
+        },
+        "px4_ros2_cpp/include/px4_ros2/utils/geodesic.hpp": {
+          "mode": "100644",
+          "sha256": "84f19b505a3c068e0944abc294f2669609972f053dcea2b11e04fc06b76cfc7d"
+        },
+        "px4_ros2_cpp/include/px4_ros2/utils/geometry.hpp": {
+          "mode": "100644",
+          "sha256": "af23963c4fc4147cef750e8d024c4e5f2834775443b074f587cd2ce8fff1bea4"
+        },
+        "px4_ros2_cpp/include/px4_ros2/utils/groups.dox": {
+          "mode": "100644",
+          "sha256": "bdf1235da2f25f4b572a370b59b460d722fc0db32f513d1f4968f6ae8d97a356"
+        },
+        "px4_ros2_cpp/include/px4_ros2/utils/message_version.hpp": {
+          "mode": "100644",
+          "sha256": "6b730c2f1853031e819ca008fde0e552251e4c0ba9cf2585139fdff575dd30cd"
+        },
+        "px4_ros2_cpp/include/px4_ros2/utils/subscription.hpp": {
+          "mode": "100644",
+          "sha256": "b4f7bd72fbb070e5a33ee98eba1dc6ec10db6a0674bbe41f52cf581e1a4a09a4"
+        },
+        "px4_ros2_cpp/include/px4_ros2/utils/vehicle_command_sender.hpp": {
+          "mode": "100644",
+          "sha256": "7d29a240e4472dca1fa0a4c745b743d365a6190ec6b8415834c575bfc88cd411"
+        },
+        "px4_ros2_cpp/include/px4_ros2/utils/visit.hpp": {
+          "mode": "100644",
+          "sha256": "1433674b6041768cb749dec94739029c70e4c4d0cc6a29f4e2059c72098c43c8"
+        },
+        "px4_ros2_cpp/include/px4_ros2/vehicle_state/battery.hpp": {
+          "mode": "100644",
+          "sha256": "ebce01b81882b6ade68c6492390de0651b871193f7043b9e1384e6f61a5ef88b"
+        },
+        "px4_ros2_cpp/include/px4_ros2/vehicle_state/groups.dox": {
+          "mode": "100644",
+          "sha256": "9b7b9ec4a8b6d28613325d16a48aaadc31641b76bd884d7c0f2c813b457fc4fd"
+        },
+        "px4_ros2_cpp/include/px4_ros2/vehicle_state/home_position.hpp": {
+          "mode": "100644",
+          "sha256": "b047f55c7e942997db15b3736a84682bf83a66bb39d1a89965df36bf79b1ac66"
+        },
+        "px4_ros2_cpp/include/px4_ros2/vehicle_state/home_position_setter.hpp": {
+          "mode": "100644",
+          "sha256": "a7d0a626b21bc0667843bdcede0b257c8ff0799f4c67a819778c63d764aa31bf"
+        },
+        "px4_ros2_cpp/include/px4_ros2/vehicle_state/land_detected.hpp": {
+          "mode": "100644",
+          "sha256": "5428f3d7580e7e016615943579c67811d8cd8b6d3fea4d23d0b02511b69dbee3"
+        },
+        "px4_ros2_cpp/include/px4_ros2/vehicle_state/vehicle_status.hpp": {
+          "mode": "100644",
+          "sha256": "8350192ecc2b2ee79bfd4e4f70a89891620b0b979890ecb7a2ff7bcbf1f8c8aa"
+        },
+        "px4_ros2_cpp/include/px4_ros2/vehicle_state/vtol_status.hpp": {
+          "mode": "100644",
+          "sha256": "322508193a5db66747cc10cfc675d4907141816f47702a274488b45d85edbe6d"
+        },
+        "px4_ros2_cpp/package.xml": {
+          "mode": "100644",
+          "sha256": "cd55d51ed18135911f29f74498669888235c2e30e428338b251d75b49786917f"
+        },
+        "px4_ros2_cpp/rosdep-humble.yaml": {
+          "mode": "100644",
+          "sha256": "62add324e71a3fc5c15ba91da2a28f2fd15f0eae81b4bd93cc7ba039c4cc8310"
+        },
+        "px4_ros2_cpp/rosdep-jazzy.yaml": {
+          "mode": "100644",
+          "sha256": "c9d78e76b3ed48361a9123909f69cd2d2b92725db46da1b52bd38199b26e60bc"
+        },
+        "px4_ros2_cpp/rosdep-rolling.yaml": {
+          "mode": "100644",
+          "sha256": "486ddd927f2535494397ff6ee9251daed8623cee31b65185b7793c8509251e5d"
+        },
+        "px4_ros2_cpp/src/components/health_and_arming_checks.cpp": {
+          "mode": "100644",
+          "sha256": "86695d314ea8840dce994fca7b57b1a15149617cdc92be362b6d8279a0d8fb6c"
+        },
+        "px4_ros2_cpp/src/components/manual_control_input.cpp": {
+          "mode": "100644",
+          "sha256": "c92c571bbfe7bf2bf2ccf22864bcfc27d296b063384625327d8e83ca6e598cd6"
+        },
+        "px4_ros2_cpp/src/components/message_compatibility_check.cpp": {
+          "mode": "100644",
+          "sha256": "866ecfff307cc50aee7a8ce2efc373effb1a2586cb5e33bc810faab998ef7743"
+        },
+        "px4_ros2_cpp/src/components/mode.cpp": {
+          "mode": "100644",
+          "sha256": "1b960f4dc774001b9d3d1c9b34c7133f29558cb379600426ab98ec8d382a2b1f"
+        },
+        "px4_ros2_cpp/src/components/mode_executor.cpp": {
+          "mode": "100644",
+          "sha256": "abc421f10b37970e2b1fd926b0fa1512a5b947fc5485a485b3c2130c777d650a"
+        },
+        "px4_ros2_cpp/src/components/overrides.cpp": {
+          "mode": "100644",
+          "sha256": "816e8edbf6a8ccd848e0cfc22dc19fca1ed2802f1748bc716e2d4b656a6a702d"
+        },
+        "px4_ros2_cpp/src/components/px4_all_messages.hpp.em": {
+          "mode": "100644",
+          "sha256": "4ef885bca8a916f80c1c3cc94c6d988250893118a04df85063d8e001940225ad"
+        },
+        "px4_ros2_cpp/src/components/registration.cpp": {
+          "mode": "100644",
+          "sha256": "9792051cffd34a9a2d707871c921e7770799c80b1724e7ee037db394cf6af46b"
+        },
+        "px4_ros2_cpp/src/components/registration.hpp": {
+          "mode": "100644",
+          "sha256": "21cb6f63098705d076d0accd670d8f43004de99727e8ca298e0ad3f6e6149503"
+        },
+        "px4_ros2_cpp/src/components/wait_for_fmu.cpp": {
+          "mode": "100644",
+          "sha256": "df901c0f27063efccc5ff5cb8ba84f13dda246ae1e5a2f4587a81e08bc66d96f"
+        },
+        "px4_ros2_cpp/src/control/peripheral_actuators.cpp": {
+          "mode": "100644",
+          "sha256": "8d3bc07ec714fb5e8316c793835d01dc81ccc9a691f897840e9834c850a1fac5"
+        },
+        "px4_ros2_cpp/src/control/setpoint_types/direct_actuators.cpp": {
+          "mode": "100644",
+          "sha256": "070e42c6e4370cc3c819297463cd380f996e9080dd6353c0965c2636075527f9"
+        },
+        "px4_ros2_cpp/src/control/setpoint_types/experimental/attitude.cpp": {
+          "mode": "100644",
+          "sha256": "99bcf0c6860f1218a0806b1aa06b3f6d96ad8029d9d8be955e6bb9ff8bb8512d"
+        },
+        "px4_ros2_cpp/src/control/setpoint_types/experimental/rates.cpp": {
+          "mode": "100644",
+          "sha256": "80decd49ef5a8571bc43d3d376a72f1242d1cd2fcce7f9848381cb175d605728"
+        },
+        "px4_ros2_cpp/src/control/setpoint_types/experimental/rover/position.cpp": {
+          "mode": "100644",
+          "sha256": "ad550e49279a2985b38a9d1002e1012e86d2639033a004898724efd2a7ebc548"
+        },
+        "px4_ros2_cpp/src/control/setpoint_types/experimental/rover/speed_attitude.cpp": {
+          "mode": "100644",
+          "sha256": "3cde4d01b14dfd1d7da363a78919ceb11fff175b1e8d64a48a90c3c27f34c335"
+        },
+        "px4_ros2_cpp/src/control/setpoint_types/experimental/rover/speed_rate.cpp": {
+          "mode": "100644",
+          "sha256": "9b082e9a94ee1421c09d04949257cfacfea3d9fc8f71a96697805da219e3727e"
+        },
+        "px4_ros2_cpp/src/control/setpoint_types/experimental/rover/speed_steering.cpp": {
+          "mode": "100644",
+          "sha256": "5338d6850cb8877bb5acb95da070a0f48dc72b8d7802803231e071eaaf08f93b"
+        },
+        "px4_ros2_cpp/src/control/setpoint_types/experimental/rover/throttle_attitude.cpp": {
+          "mode": "100644",
+          "sha256": "fb5983534172b52a0232ee060bb3a1e1bdaa9ce73f6de3dee3dbd54858c9e852"
+        },
+        "px4_ros2_cpp/src/control/setpoint_types/experimental/rover/throttle_rate.cpp": {
+          "mode": "100644",
+          "sha256": "0118680d6b57736118a53e1ea38ddc5f7fb7d4f825ff427a4b2035619fef8571"
+        },
+        "px4_ros2_cpp/src/control/setpoint_types/experimental/rover/throttle_steering.cpp": {
+          "mode": "100644",
+          "sha256": "67d96513c3a16592f81b783f59ecd07b9cc260e28333e4046356c7fad96f4e6f"
+        },
+        "px4_ros2_cpp/src/control/setpoint_types/experimental/trajectory.cpp": {
+          "mode": "100644",
+          "sha256": "6b11903a7795df89a40acba6c960c5c1d833ef4fb07123485d11217399c406ac"
+        },
+        "px4_ros2_cpp/src/control/setpoint_types/fixedwing/lateral_longitudinal.cpp": {
+          "mode": "100644",
+          "sha256": "f93bacf96bd3772ed61ed132415b44e6fff7f64a39a3a0b87b160fcb29eeac0c"
+        },
+        "px4_ros2_cpp/src/control/setpoint_types/multicopter/goto.cpp": {
+          "mode": "100644",
+          "sha256": "ade92a17e1d3fbed9b387a1f37f582b628c3bc9a8b738f6322004f12aac55bc1"
+        },
+        "px4_ros2_cpp/src/control/vtol.cpp": {
+          "mode": "100644",
+          "sha256": "da5eee2b56e48d55a9fc6a8d27a76f7e78726d432f9ed1536183e319aa9d3e35"
+        },
+        "px4_ros2_cpp/src/mission/actions/default_actions.cpp": {
+          "mode": "100644",
+          "sha256": "24d722cfc19608abd21488b12f08ad7af4b35353cb1d2e00b965c7f9d79fb7e9"
+        },
+        "px4_ros2_cpp/src/mission/mission.cpp": {
+          "mode": "100644",
+          "sha256": "51348f920732a23b2a5e53b89cbe453a6f852fc3e2901548f46ad3824f7f2a8b"
+        },
+        "px4_ros2_cpp/src/mission/mission_executor.cpp": {
+          "mode": "100644",
+          "sha256": "d4d60fc98fce39a6d4bed5d266b324c4f7e603812283a17d19d14c36bf8a5169"
+        },
+        "px4_ros2_cpp/src/mission/trajectory/multicopter/waypoint_trajectory_executor.cpp": {
+          "mode": "100644",
+          "sha256": "9ddd7b5351e9c5b5e9592347a246a6e1d9efc925e1cb810b8b33ffa0948c1fd3"
+        },
+        "px4_ros2_cpp/src/navigation/experimental/global_position_measurement_interface.cpp": {
+          "mode": "100644",
+          "sha256": "81cbaa772dc64c22b76d443004b2d9a6e16a4faa8c1a6ffd71d5063ebd954a1a"
+        },
+        "px4_ros2_cpp/src/navigation/experimental/local_position_measurement_interface.cpp": {
+          "mode": "100644",
+          "sha256": "185cd9a35c22cd8e939a56f4c083a417029e934844b45281df2af64d18334c46"
+        },
+        "px4_ros2_cpp/src/odometry/airspeed.cpp": {
+          "mode": "100644",
+          "sha256": "9be895f0845600f046de629fe5dc7e894eb5662db921a33bb4e7653837238b4d"
+        },
+        "px4_ros2_cpp/src/odometry/angular_velocity.cpp": {
+          "mode": "100644",
+          "sha256": "4a8c1a084f25c3e336016c3b9777dc6b60d916b2abd840787230bc4ffb75d4bb"
+        },
+        "px4_ros2_cpp/src/odometry/attitude.cpp": {
+          "mode": "100644",
+          "sha256": "932fcbbd7626f853a94ec4ed4feff6fa87a6c524ae26f2235490a9a41cfdf4eb"
+        },
+        "px4_ros2_cpp/src/odometry/global_position.cpp": {
+          "mode": "100644",
+          "sha256": "1ce51c7b608d90dfc22a5f607e36a27f4accb7aaa1394dc7c12f5b8b09a68ec1"
+        },
+        "px4_ros2_cpp/src/odometry/local_position.cpp": {
+          "mode": "100644",
+          "sha256": "f8b925c8948c461c3ee46fe855e8c85b8f8534191d9c37fdae43800cc52cc493"
+        },
+        "px4_ros2_cpp/src/odometry/odometry.cpp": {
+          "mode": "100644",
+          "sha256": "77210282e3609294fc507765b863b144507056e7a37af3a822dd6c6400db4c2c"
+        },
+        "px4_ros2_cpp/src/utils/geodesic.cpp": {
+          "mode": "100644",
+          "sha256": "605585660c0641d16749f120a8bf7edc4dd0115cf0ecc37b4b31b583faeed7e2"
+        },
+        "px4_ros2_cpp/src/utils/map_projection_impl.cpp": {
+          "mode": "100644",
+          "sha256": "6736cd268757574442ab504548823e106a1dc725a02bc8b7df78f39172f13b7c"
+        },
+        "px4_ros2_cpp/src/utils/map_projection_impl.hpp": {
+          "mode": "100644",
+          "sha256": "9c60e5b3cae5b1420aa464d687198a76082d6b237025d83745dc14f4e8eaa071"
+        },
+        "px4_ros2_cpp/src/utils/vehicle_command_sender.cpp": {
+          "mode": "100644",
+          "sha256": "0c51fbf6eb0582f319518756bfd32d9eeac25e2d6d9eb04ed55cb4be9db582e1"
+        },
+        "px4_ros2_cpp/src/vehicle_state/home_position_setter.cpp": {
+          "mode": "100644",
+          "sha256": "160e4970527e68054b3ba7b3ef0c5095e637c98298778fe359b4e3e9a4353215"
+        },
+        "px4_ros2_cpp/test/integration/arming_check.cpp": {
+          "mode": "100644",
+          "sha256": "67c40d1fb3a03b37751b6ac8b4348dbf8008e75177f70bc9169ba8d5760bc0b7"
+        },
+        "px4_ros2_cpp/test/integration/global_navigation.cpp": {
+          "mode": "100644",
+          "sha256": "ae340868b1f9b18e1cd467852a50fd9d1f0139a4e7be6b4834ddcc9ef4ed5a7f"
+        },
+        "px4_ros2_cpp/test/integration/home_position_setter.cpp": {
+          "mode": "100644",
+          "sha256": "d0ebac72a170ffa57c74c5323a3d770868c920f6ac877ba7463ff36f161a9e91"
+        },
+        "px4_ros2_cpp/test/integration/local_navigation.cpp": {
+          "mode": "100644",
+          "sha256": "eb80f3dc5eff60b4c5eb01d972e8db2808f86261a0e4b8383444f018a25edde4"
+        },
+        "px4_ros2_cpp/test/integration/mission.cpp": {
+          "mode": "100644",
+          "sha256": "e2746b6fd02c9c2f2b01d5b529e083975f13a24ba82f97c3a4c60a4879e4be0d"
+        },
+        "px4_ros2_cpp/test/integration/mode.cpp": {
+          "mode": "100644",
+          "sha256": "e83ac1e6d10840ab86a82052a02f9aac3aed8a49c20e3305d8419a48078a4992"
+        },
+        "px4_ros2_cpp/test/integration/mode_executor.cpp": {
+          "mode": "100644",
+          "sha256": "07516cf18615b7f4113bf24888d27108c4648a294a9b085d1ac2a46259b05ea2"
+        },
+        "px4_ros2_cpp/test/integration/overrides.cpp": {
+          "mode": "100644",
+          "sha256": "28462995a3c8be50541d630da796b8214b252f35632a124f7975ade80bd2acde"
+        },
+        "px4_ros2_cpp/test/integration/util.cpp": {
+          "mode": "100644",
+          "sha256": "58e65bf72eee654a10bb31f26dda8f29649ee072dbe3c3762849c6c8b268fccf"
+        },
+        "px4_ros2_cpp/test/integration/util.hpp": {
+          "mode": "100644",
+          "sha256": "504e6e2818cbe7a931d468bebe0c5a646a65d48880909c10fc6df6826778a7c8"
+        },
+        "px4_ros2_cpp/test/unit/fake_autopilot.hpp": {
+          "mode": "100644",
+          "sha256": "a3678ffcbffd6c2bb12530b1112690261dbc8577510f87f1fa5e8863105f9982"
+        },
+        "px4_ros2_cpp/test/unit/fake_registration.hpp": {
+          "mode": "100644",
+          "sha256": "acfa002406d63d9526da88612fb45015d28b08240bc6e634abb8b4ba05509c8a"
+        },
+        "px4_ros2_cpp/test/unit/global_navigation.cpp": {
+          "mode": "100644",
+          "sha256": "10f14964d4efa1e6bd115a4af189ac0aaba500273d22fbe9379894016e3ceec4"
+        },
+        "px4_ros2_cpp/test/unit/local_navigation.cpp": {
+          "mode": "100644",
+          "sha256": "dc526b8895a4129701547805357d54dc8c2f92c8837c0f30ecbb4f4e4b3c3c0d"
+        },
+        "px4_ros2_cpp/test/unit/main.cpp": {
+          "mode": "100644",
+          "sha256": "40889d485523d310552d2e4aecce7afea3304bafd7ef5308141b5c26e2a4258c"
+        },
+        "px4_ros2_cpp/test/unit/mission_execution.cpp": {
+          "mode": "100644",
+          "sha256": "e44039f4d653337f7d3c132ed83b513e9f73715d4e1753b2f8deb79cf925a4c4"
+        },
+        "px4_ros2_cpp/test/unit/mission_execution.hpp": {
+          "mode": "100644",
+          "sha256": "c90d17d6aa91cba68319c1aeacae111f6a031d7205ec76ea145e9ec27880c2b5"
+        },
+        "px4_ros2_cpp/test/unit/modes.cpp": {
+          "mode": "100644",
+          "sha256": "b9925c14e71815682ad52cad7d7343b508cfc8a7c0278245d8622b037aa74b0f"
+        },
+        "px4_ros2_cpp/test/unit/shared_subscription.cpp": {
+          "mode": "100644",
+          "sha256": "af77643b76779cde8aab29cb5eafd6ae27be047c9346b9e0ed4edb5a877e0b58"
+        },
+        "px4_ros2_cpp/test/unit/utils/frame_conversion.cpp": {
+          "mode": "100644",
+          "sha256": "c5e1fcface757bb0ba460dfbbe09700873f8f1a399f90d60b4908233f1a1bcc7"
+        },
+        "px4_ros2_cpp/test/unit/utils/geodesic.cpp": {
+          "mode": "100644",
+          "sha256": "f65d8910bec19a803cf8f4266b5b3ec11651ca9f833f30ba1233a343a4c4d657"
+        },
+        "px4_ros2_cpp/test/unit/utils/geometry.cpp": {
+          "mode": "100644",
+          "sha256": "c2f55cf6dcaf5b3eb5e6ee3cb253550e7e281f1aa28f78a258c3fcd96c91d818"
+        },
+        "px4_ros2_cpp/test/unit/utils/map_projection_impl.cpp": {
+          "mode": "100644",
+          "sha256": "f0491b7058e6d596ff5489b0e4759d702579942af9ee10a5f07967b7fb20e42f"
+        },
+        "px4_ros2_cpp/test/unit/utils/ros_log_capture.hpp": {
+          "mode": "100644",
+          "sha256": "a738aea31cd2dc31b803cab7cdfbf1208eab5d2876ee3d268d1ab42d679bf6ee"
+        },
+        "px4_ros2_cpp/test/unit/utils/util.cpp": {
+          "mode": "100644",
+          "sha256": "8d2440025642f249e475aa365201755bc01136c03b4c1872f853bfdd32464af6"
+        },
+        "px4_ros2_cpp/test/unit/utils/util.hpp": {
+          "mode": "100644",
+          "sha256": "7170a574ac113af85210c6bb2afaca80f83689dec81d2f4e6453a297e706775e"
+        },
+        "px4_ros2_cpp/test/unit/utils/wait_for.hpp": {
+          "mode": "100644",
+          "sha256": "14ff0f1dd19b77bdf3e19a676e234f40371e6bfdec15485865f61f45cadc1980"
+        },
+        "px4_ros2_cpp/test/unit/vehicle_command_sender.cpp": {
+          "mode": "100644",
+          "sha256": "edc47ca82e383a5a695a0730cdc699c8efb305d061f179d76fb41263a9122be8"
+        },
+        "px4_ros2_cpp/test/unit/vtol.cpp": {
+          "mode": "100644",
+          "sha256": "2592e73d4f687062c4084d9820aa0866b09f6c8d9da5b45cc2c013bb3cd8db35"
+        },
+        "px4_ros2_py/CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "2803d0a6f430f2ae71e6a8a2ef1d5de99cd26fe5775e474714a7ae41b0963d9f"
+        },
+        "px4_ros2_py/include/px4_ros2_py/utils/conversion.hpp": {
+          "mode": "100644",
+          "sha256": "49b743d7f6aad9eb4d5a35420516e2894f1f08d58a09caf90cfd6bed71a4237d"
+        },
+        "px4_ros2_py/package.xml": {
+          "mode": "100644",
+          "sha256": "6b9de5633de23218bfe729c9dbf764d231c3d1f0c957bdf244fed05975688ea9"
+        },
+        "px4_ros2_py/px4_ros2/__init__.py": {
+          "mode": "100644",
+          "sha256": "cf6e65b841e2c2d58dba68c39973f1b719f09c753ae85c01f0c91e37adc31cde"
+        },
+        "px4_ros2_py/src/px4_ros2/bind_main.cpp": {
+          "mode": "100644",
+          "sha256": "f58656f0f92eba0d3e5129471317c401e8dfee63debfbad7247b0ccb0bd5fcd1"
+        },
+        "px4_ros2_py/src/px4_ros2/components/mode.cpp": {
+          "mode": "100644",
+          "sha256": "3587b54b07a093bdda4d4f22121d7ff64ae19d16bee53fca101584465c7ce610"
+        },
+        "px4_ros2_py/src/px4_ros2/components/mode.hpp": {
+          "mode": "100644",
+          "sha256": "e87be0807cda831332576ca9dd0554756c67a8b4607ae0b0a8c1f92f9f04338b"
+        },
+        "px4_ros2_py/src/px4_ros2/components/mode_executor.cpp": {
+          "mode": "100644",
+          "sha256": "10c796867eb7529455bf918a5d2e9c90c26c246f89358ddd4f12028975f13955"
+        },
+        "px4_ros2_py/src/px4_ros2/components/mode_executor.hpp": {
+          "mode": "100644",
+          "sha256": "d471dea01374bb52dfa5fd450c7d8e3b69f2bc46f1ca5840d9fd28a625081f96"
+        },
+        "px4_ros2_py/src/px4_ros2/components/node_wrapper.cpp": {
+          "mode": "100644",
+          "sha256": "54011122790595138d24c34fa05cdde620fe334b846b36e6cb52b29da0a2b374"
+        },
+        "px4_ros2_py/src/px4_ros2/components/node_wrapper.hpp": {
+          "mode": "100644",
+          "sha256": "0ec98ac52dc8887d715474a26758c9535a2c97ae39913603e02b7497402e53b7"
+        },
+        "px4_ros2_py/src/px4_ros2/control/setpoint_types/multicopter/goto.cpp": {
+          "mode": "100644",
+          "sha256": "9349c09b88686b54a9a3a6f8c422f26b6d5ac789a14e86d5ba8a6e86a0d253e8"
+        },
+        "px4_ros2_py/src/px4_ros2/control/setpoint_types/multicopter/goto.hpp": {
+          "mode": "100644",
+          "sha256": "7659231cc0ae709a08a0f5a6294d418e98aae8391fff6a34a13ecd345fad8f5f"
+        },
+        "px4_ros2_py/src/px4_ros2/odometry/local_position.cpp": {
+          "mode": "100644",
+          "sha256": "9a827966bd8033a728bd4575b760a435da2461bafe210b492d2413c89f234e62"
+        },
+        "px4_ros2_py/src/px4_ros2/odometry/local_position.hpp": {
+          "mode": "100644",
+          "sha256": "f358e6371e6190592349b6f450007d16490ae6a2cded478b90e1d7e7606f4735"
+        },
+        "px4_ros2_py/src/px4_ros2/utils/geometry.cpp": {
+          "mode": "100644",
+          "sha256": "834cbc4cde4b3b583d8a586b945724dee89fd54c0843122d482b826f35bfbe8f"
+        },
+        "px4_ros2_py/src/px4_ros2/utils/geometry.hpp": {
+          "mode": "100644",
+          "sha256": "44cb9599fdad6780e661f16045d3678dc279e14e8d90f64cb9809209ad0b60f7"
+        },
+        "python_docs/.gitignore": {
+          "mode": "100644",
+          "sha256": "1937131c31a6556e4bbcec470bfa5b6a16ec481dc9f4e127a00c2d3347b7eb16"
+        },
+        "python_docs/Makefile": {
+          "mode": "100644",
+          "sha256": "7fc84bd1ad7862acf1e23c49fac3e05e7f25660823a4f26c99e299219a128794"
+        },
+        "python_docs/conf.py": {
+          "mode": "100644",
+          "sha256": "c64c27a06e2683df600206120fe1c489ff004b1e1ec51e15bee04d9636a3ce7b"
+        },
+        "python_docs/index.rst": {
+          "mode": "100644",
+          "sha256": "fecf70cda8ca9d9dd11150900555782c6c3df3714b9882eed96d27179c18e81a"
+        },
+        "python_docs/px4_ros2_py.rst": {
+          "mode": "100644",
+          "sha256": "978498778e1d87c4cf7ddea56360bf335b835a58ac0cd900d9da129918f16bdc"
+        },
+        "ruff.toml": {
+          "mode": "100644",
+          "sha256": "cd8b69992e0548f480655ef24d9284d79732938b50047b2ca4d37d1c8e64b016"
+        },
+        "scripts/check-message-compatibility.py": {
+          "mode": "100755",
+          "sha256": "3443dccc08712071936d4f7300b82c1f593aebf25101ea31159eef5dbdd6e2cd"
+        },
+        "scripts/check-used-topics.py": {
+          "mode": "100755",
+          "sha256": "e7546a727e37f71327fd747f373a85fc87354d52f03ca34dd35c2b800d95e407"
+        },
+        "scripts/run-clang-tidy-on-project.sh": {
+          "mode": "100755",
+          "sha256": "5e4f011e10dc0c3d5b91a2d963428cbd1e856142e43bcc3e3241c7c6c8b01fe0"
+        },
+        "scripts/run-clang-tidy.py": {
+          "mode": "100755",
+          "sha256": "f682f4b07d6ef38f883c172dcd1c13665118a567babce8e3268a741837bad032"
+        },
+        "scripts/run-doxygen.sh": {
+          "mode": "100755",
+          "sha256": "427dd7534def1fd2d0b58da7bd5a4b1265d0eed4b2f98ed9ee9dc7a2f09ccb51"
+        }
+      },
+      "repository": "https://github.com/Auterion/px4-ros2-interface-lib.git"
+    },
+    "ws_px4/src/px4_msgs": {
+      "commit": "51e66788d6d538c7eabdb6a3becb6eee78167cb2",
+      "excluded_upstream_paths": [],
+      "files": {
+        ".github/dependabot.yml": {
+          "mode": "100644",
+          "sha256": "eeef2a7ee7def3bfbdcb0018a831200f6999bd9b3d09b4131e2e479bd7ef337d"
+        },
+        ".github/workflows/build.yml": {
+          "mode": "100644",
+          "sha256": "d76a3aa2b1097910ca4ad3bff9ba03f1878827dfb83e15a31e740d9ffd3059dd"
+        },
+        ".gitignore": {
+          "mode": "100644",
+          "sha256": "cb8b09ca09d5435730a29c4a7362d0e7080318b9ffbac6377dedd4f4e14f7f15"
+        },
+        "CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "f02160dc0a6af7484ddc5a515852ba97e667431c2d5093f059172a052e25b95e"
+        },
+        "CONTRIBUTING.md": {
+          "mode": "100644",
+          "sha256": "826f63d9725975e17b01d8b37bb2ec20f454631df34c41718a2bd77bc7ef8453"
+        },
+        "LICENSE": {
+          "mode": "100644",
+          "sha256": "1757308f1a82f6203bc448a11462f22b8466b4bdd59bc3dce97f01a478cd4d2d"
+        },
+        "README.md": {
+          "mode": "100644",
+          "sha256": "9907a0ba73db29281b71029712489e9c267b11036335a83546cffa5104daa635"
+        },
+        "msg/ActionRequest.msg": {
+          "mode": "100644",
+          "sha256": "c3821ea77b4f1fdbb96554cf5a3cf31e5f34e801635f78b1e9ca3757630f51f3"
+        },
+        "msg/ActuatorArmed.msg": {
+          "mode": "100644",
+          "sha256": "a9cfd38bd9722ee3f34ba32587ac6542dd70f06a5eda7854f3685e7a6f5cf740"
+        },
+        "msg/ActuatorControlsStatus.msg": {
+          "mode": "100644",
+          "sha256": "7c684f2b96a2ca9b1cac6a05d46c57a3de3132ac9bb18ba5c54f5521ae55cb51"
+        },
+        "msg/ActuatorMotors.msg": {
+          "mode": "100644",
+          "sha256": "859083aaec29cef2f0d6aaff574962800ae2afe3509f0482413a81f1248fd186"
+        },
+        "msg/ActuatorOutputs.msg": {
+          "mode": "100644",
+          "sha256": "18baa5261a3bf906e65beee3470db943c8b7fb5aa36551ccc4ab6f732c6a2cdd"
+        },
+        "msg/ActuatorServos.msg": {
+          "mode": "100644",
+          "sha256": "2db5710f34190be1cc06d67644907d2f9e14bdaa99b640cfe67e0379b6ffebdf"
+        },
+        "msg/ActuatorServosTrim.msg": {
+          "mode": "100644",
+          "sha256": "98a7f8ac598ac450e13034b5c115164b72b5a1c9aedb383066e3a6a83f65d3a0"
+        },
+        "msg/ActuatorTest.msg": {
+          "mode": "100644",
+          "sha256": "1759911ec0e7754bf3e039a3853b4d5063fff46aea685901e2a4890547f1ff4a"
+        },
+        "msg/AdcReport.msg": {
+          "mode": "100644",
+          "sha256": "77a12e29f8e78c4b956cfc72d231f5e3ea3a8d8346bcc7206f7a1864ec546422"
+        },
+        "msg/Airspeed.msg": {
+          "mode": "100644",
+          "sha256": "8460604533d1e4fb8e634e794c6e2bef3ac7eecc3457155fb6cf8a1ef2c9bca4"
+        },
+        "msg/AirspeedValidated.msg": {
+          "mode": "100644",
+          "sha256": "4e35f6f788a883a7ae6a2bca1a234fbe42f116c08a8f67720ee464ea754e8769"
+        },
+        "msg/AirspeedWind.msg": {
+          "mode": "100644",
+          "sha256": "f02678242b013e240c966a90655ae96b6f0c41c2a978a8bb0b6ba1462b39c3e7"
+        },
+        "msg/ArmingCheckReply.msg": {
+          "mode": "100644",
+          "sha256": "3a2e183a94a87ebcebcdaa09f6cc76f1d15f2c41fc412a4734144ebf3bb23101"
+        },
+        "msg/ArmingCheckRequest.msg": {
+          "mode": "100644",
+          "sha256": "665852e8be83ac840ce1a026cce4055600c8edf31330586e53df6a1ffc4e99a4"
+        },
+        "msg/AutotuneAttitudeControlStatus.msg": {
+          "mode": "100644",
+          "sha256": "c7588037c321fc591cd69320b009d4e69cc6daa7540852b6ffb5c20d8a5b1d6c"
+        },
+        "msg/AuxGlobalPosition.msg": {
+          "mode": "100644",
+          "sha256": "05c51a800c050a74e700cd45401bcee9219076e561015e459e3aee4816bd4682"
+        },
+        "msg/BatteryInfo.msg": {
+          "mode": "100644",
+          "sha256": "b1c52c993c5ced9d9852fcfdda2d44057da027b6e6e196c040797998085eb996"
+        },
+        "msg/BatteryStatus.msg": {
+          "mode": "100644",
+          "sha256": "3a7fb373281aaa796be29288cd9d3b4c22fa9bdcaee2180af633220d1c064a3d"
+        },
+        "msg/ButtonEvent.msg": {
+          "mode": "100644",
+          "sha256": "af7731b520e90ef85f2e6abac7f1951a6229678d5bd53211383381f23ef593de"
+        },
+        "msg/CameraCapture.msg": {
+          "mode": "100644",
+          "sha256": "b22a56db9adb1f82a04638909e537dbdfe383627e0d1ab6a86649e882f5474b4"
+        },
+        "msg/CameraStatus.msg": {
+          "mode": "100644",
+          "sha256": "95a5e6b83b5f908fca6c4424807f6336d9f458ff58e90425958fd98f5d494985"
+        },
+        "msg/CameraTrigger.msg": {
+          "mode": "100644",
+          "sha256": "93a0295badd0cb7ac1d8f1118cd6172facb52d6e785e0a6ab8c79c477c80c955"
+        },
+        "msg/CanInterfaceStatus.msg": {
+          "mode": "100644",
+          "sha256": "3043c2c27a215263e0dbdfcf05f08615121a94bbfb78acc548565b5ac1ee8d63"
+        },
+        "msg/CellularStatus.msg": {
+          "mode": "100644",
+          "sha256": "12ddc8bf3814dfe3425de02b8e0af803beb74164b99f359aa480e7cf3aad7449"
+        },
+        "msg/CollisionConstraints.msg": {
+          "mode": "100644",
+          "sha256": "8a615fea17e71dd4cd072decdd175096a13277bc57349be47f2cb9b9a24d987a"
+        },
+        "msg/ConfigOverrides.msg": {
+          "mode": "100644",
+          "sha256": "17933a21c6334b2033e984d86e7c9ba3d268fcf6b4cbc5ec47cfa6f79d42dd0d"
+        },
+        "msg/ControlAllocatorStatus.msg": {
+          "mode": "100644",
+          "sha256": "77b30bb94702b41ee3ea890541b7dc354e878455d559120905a2463ab3d327a4"
+        },
+        "msg/Cpuload.msg": {
+          "mode": "100644",
+          "sha256": "d0f217ca2f7afcb378772cb5b3fce496587889b609ac0b3df935c8c13280c268"
+        },
+        "msg/DatamanRequest.msg": {
+          "mode": "100644",
+          "sha256": "73486d981749affc085330b6151ff8e0c7a922be5db2f57b60024afcd6827e17"
+        },
+        "msg/DatamanResponse.msg": {
+          "mode": "100644",
+          "sha256": "e3f4a644386e556d7cf2b9074fff7ea2f9ea85d07bb72365b5b31ba82ff18511"
+        },
+        "msg/DebugArray.msg": {
+          "mode": "100644",
+          "sha256": "47bcbb7e3710544bf5e18bacdd8755c9d630676e32d03b3d7406b8212c55e5a1"
+        },
+        "msg/DebugKeyValue.msg": {
+          "mode": "100644",
+          "sha256": "4bd455d2a14f90bf0544ac487eeb456e4540073f4b07a0f67add32a7686a2a68"
+        },
+        "msg/DebugValue.msg": {
+          "mode": "100644",
+          "sha256": "c6e0b7362780775566f437feeaba01c3f6dbd509a36ec6250080ed051e32f0ed"
+        },
+        "msg/DebugVect.msg": {
+          "mode": "100644",
+          "sha256": "7d1cec795879aac4111353732e6140604204343b4fcc96029c9fa1ebe2903339"
+        },
+        "msg/DeviceInformation.msg": {
+          "mode": "100644",
+          "sha256": "91a1832225fad0d83f9d586d9f7a064414d79cb596a845cdd253e7a6d29cdb8d"
+        },
+        "msg/DifferentialPressure.msg": {
+          "mode": "100644",
+          "sha256": "204ee7dea645f92b1463fce2008ad18e48a491eb3730bee1ac1c6cdd960a09a0"
+        },
+        "msg/DistanceSensor.msg": {
+          "mode": "100644",
+          "sha256": "4d50a87a77bdf3de8b2487b250f5872c5527e08117c2aa50122c158c8d101263"
+        },
+        "msg/DistanceSensorModeChangeRequest.msg": {
+          "mode": "100644",
+          "sha256": "ebd5026fa37843bc7e7400247a69dc1288fca536a63abc9189cdb82ad80faae7"
+        },
+        "msg/DronecanNodeStatus.msg": {
+          "mode": "100644",
+          "sha256": "be43064709ff4f95f3a19c833ab8212d2fbcf0db1dafd0e3a7c73bbc6a742760"
+        },
+        "msg/Ekf2Timestamps.msg": {
+          "mode": "100644",
+          "sha256": "a8124acce4d9c148d67a9d1875f824b119b4fe7910e08064b72bf5d88d92495e"
+        },
+        "msg/EscReport.msg": {
+          "mode": "100644",
+          "sha256": "48fe46d718bf40d8c61b13f3dc541ec71db7251152185cd4751c26e128fb8cde"
+        },
+        "msg/EscStatus.msg": {
+          "mode": "100644",
+          "sha256": "7c1d9298d6b8cc5e90a98fc4d2093165270c413ded649115c60fb9851ef89f7b"
+        },
+        "msg/EstimatorAidSource1d.msg": {
+          "mode": "100644",
+          "sha256": "de37c10bf282c9d844d984e8a9a73536dd9e9e3c7b46e7bb9ef0fcf18c9149ee"
+        },
+        "msg/EstimatorAidSource2d.msg": {
+          "mode": "100644",
+          "sha256": "6f79a92ef4009a5a5a82834033baafd8ddd724512bcb069607ab0ca286a002ae"
+        },
+        "msg/EstimatorAidSource3d.msg": {
+          "mode": "100644",
+          "sha256": "aca94730f9da756cae40f45b517c37fc76312231b8cb5e343bab2cbe18322e5c"
+        },
+        "msg/EstimatorBias.msg": {
+          "mode": "100644",
+          "sha256": "19c7042e2284276bb0d05e3211d0ec78e7f8579f5098c21dc8046d4735301d86"
+        },
+        "msg/EstimatorBias3d.msg": {
+          "mode": "100644",
+          "sha256": "c27f9c8211e84bd2738f6dc98e346879dab0ebbad4accd5b2d5819f5941b269c"
+        },
+        "msg/EstimatorEventFlags.msg": {
+          "mode": "100644",
+          "sha256": "7abe754c8530fe1be7aef425716df82b983946cfe81f92a09973ea0e8e9c8b78"
+        },
+        "msg/EstimatorGpsStatus.msg": {
+          "mode": "100644",
+          "sha256": "7af18ed29ccbb4f77d8ea945001f78f9ed0b1caa726425030194a405f40e1d57"
+        },
+        "msg/EstimatorInnovations.msg": {
+          "mode": "100644",
+          "sha256": "b5af30a8eaabc1b0a1307026a3a993290e6c451808bf049148ddcf2be1216fc3"
+        },
+        "msg/EstimatorSelectorStatus.msg": {
+          "mode": "100644",
+          "sha256": "5dffef3f03f0085a53a263095cda303b73098537413d5d3f2aef725307c368ed"
+        },
+        "msg/EstimatorSensorBias.msg": {
+          "mode": "100644",
+          "sha256": "156825ca89c9f241aff8a9ca01100c9f837be4c2183fc7c156fc2037e021020f"
+        },
+        "msg/EstimatorStates.msg": {
+          "mode": "100644",
+          "sha256": "cc17e503d46578a275e1248e92490e431a94ecd8bc32fd807c239a4e1d5f1780"
+        },
+        "msg/EstimatorStatus.msg": {
+          "mode": "100644",
+          "sha256": "dfef1210ff72fea4e37edbf493cce441825048eda460992d981813aa2cd113ea"
+        },
+        "msg/EstimatorStatusFlags.msg": {
+          "mode": "100644",
+          "sha256": "b48af525077636459d2cc9d5a9a249da1129f4e861c0206581d6df8545df075a"
+        },
+        "msg/Event.msg": {
+          "mode": "100644",
+          "sha256": "c7296689f312adc27621fe2d97c6724b639e9876c07291ed20531a167711d9fc"
+        },
+        "msg/FailsafeFlags.msg": {
+          "mode": "100644",
+          "sha256": "1bf17f91da3d816b53651d3dc1bb3034021440fa4279a8bbe1e202331377aa9f"
+        },
+        "msg/FailureDetectorStatus.msg": {
+          "mode": "100644",
+          "sha256": "602b8a939e663660c04edbac9fb87826b8a01d986d284702d500c0d07d8dc9f9"
+        },
+        "msg/FigureEightStatus.msg": {
+          "mode": "100644",
+          "sha256": "2e682130c200b7847d69163778394031af1dda0f1cc53db2218f9ea164be0d1f"
+        },
+        "msg/FixedWingLateralGuidanceStatus.msg": {
+          "mode": "100644",
+          "sha256": "275d30ed117a15289ad920e1034625084e5acfdcafb592e148962f8ccec6273a"
+        },
+        "msg/FixedWingLateralSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "4f49b21414f896ab7620116944c824132d6def7f95767070e4c8f119411819c1"
+        },
+        "msg/FixedWingLateralStatus.msg": {
+          "mode": "100644",
+          "sha256": "df8b223e5ee116fcf68639398439171ce3f6d70b16ef87f9e7cef194fd1e11f4"
+        },
+        "msg/FixedWingLongitudinalSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "1df73854036fb4cca82f4f16eec87b77ca70dcd76a293230ca1f2298bee49dd0"
+        },
+        "msg/FixedWingRunwayControl.msg": {
+          "mode": "100644",
+          "sha256": "eb24114d500aec20048d490907a6b3a7abe4658efed0cdae3b4b66b859d0dbb0"
+        },
+        "msg/FlightPhaseEstimation.msg": {
+          "mode": "100644",
+          "sha256": "0319f1da07969ccbfa14c47c5874747454c6b3c1c10e7c0bb15f1e7dd6ed894a"
+        },
+        "msg/FollowTarget.msg": {
+          "mode": "100644",
+          "sha256": "a7b059497d113533dbb3f296e5cc817faf94f69237b1564e00e125a0698306d5"
+        },
+        "msg/FollowTargetEstimator.msg": {
+          "mode": "100644",
+          "sha256": "96109ae9fad3f6ef144fd5a96d7f04a91a9cb912fed3159443209842c663ca6f"
+        },
+        "msg/FollowTargetStatus.msg": {
+          "mode": "100644",
+          "sha256": "46e444c3fb16158ab5765244980f11a014589a9433d7af583c6be62de2eeb7ee"
+        },
+        "msg/FuelTankStatus.msg": {
+          "mode": "100644",
+          "sha256": "bae1a8207241ef7113753f830d50cec526defe05acf45469d37fdea8ddefb454"
+        },
+        "msg/GainCompression.msg": {
+          "mode": "100644",
+          "sha256": "91c1fbb6cdc32910cf86969e2e27b002da85d426e1acf3af26adb6966b1a7044"
+        },
+        "msg/GeneratorStatus.msg": {
+          "mode": "100644",
+          "sha256": "b8c6cd745e80d2756c488f6f184140a0dd10d17a84c06a8aa92c36704dd353b1"
+        },
+        "msg/GeofenceResult.msg": {
+          "mode": "100644",
+          "sha256": "dbde76c6802b4f3388a7094534249c40ab18059bd206aff90ab4f4adfb284250"
+        },
+        "msg/GeofenceStatus.msg": {
+          "mode": "100644",
+          "sha256": "2a5583e3b2e4ebec0f1266c062c6e5619ff5ba8ca8bb25f7f2ad075c9ec40aa1"
+        },
+        "msg/GimbalControls.msg": {
+          "mode": "100644",
+          "sha256": "f17964a45e37ae874ab1a493b2dcdbbede0dfb7ad2a892c20a278f4bb1ae9334"
+        },
+        "msg/GimbalDeviceAttitudeStatus.msg": {
+          "mode": "100644",
+          "sha256": "917fddd55bf0babd4f6dbb5ec36a575e928094280577a092d4cfde91dfe621b0"
+        },
+        "msg/GimbalDeviceInformation.msg": {
+          "mode": "100644",
+          "sha256": "f61e07cde2c46ec32860ece23eb6cc09ec4e8da6d843b669cf4ac974116f5519"
+        },
+        "msg/GimbalDeviceSetAttitude.msg": {
+          "mode": "100644",
+          "sha256": "26643dad664d65073439d9ac8242ea771753f9b75651bbd20758a412e361d614"
+        },
+        "msg/GimbalManagerInformation.msg": {
+          "mode": "100644",
+          "sha256": "5e7060603eef3cbf0142bd1eabb3faac177f28bf9b791d8dd1a365ef8fadca20"
+        },
+        "msg/GimbalManagerSetAttitude.msg": {
+          "mode": "100644",
+          "sha256": "a8d6889feae8c894c58748ac80219837b5b6a7d545c9c22dde5aad62325be845"
+        },
+        "msg/GimbalManagerSetManualControl.msg": {
+          "mode": "100644",
+          "sha256": "df8ec27b4c73a2bb9e8a55568bcc398416f8d50c48d4c6a703b68b787c67c33e"
+        },
+        "msg/GimbalManagerStatus.msg": {
+          "mode": "100644",
+          "sha256": "791e4147199ad075a63fdd931b96959add789c9c76d8ba07ffd7cfc48c067d01"
+        },
+        "msg/GotoSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "6c44ad08eed225365fd0ff7dc3d3f89c469bca55f9c04a028386007167c45706"
+        },
+        "msg/GpioConfig.msg": {
+          "mode": "100644",
+          "sha256": "29d4cb814ae8a793782a2fa21b330264a537e0c3305e737ae2690327ab54f779"
+        },
+        "msg/GpioIn.msg": {
+          "mode": "100644",
+          "sha256": "f5b03ffa6e9958d6d0f66feecfc829f7d1f9c1048b32a7875dedc70a6febf76e"
+        },
+        "msg/GpioOut.msg": {
+          "mode": "100644",
+          "sha256": "0cdb3e27cf4dc0fc03afbdd4af8b270dcb936505a1b8ed378d68e78046f77b01"
+        },
+        "msg/GpioRequest.msg": {
+          "mode": "100644",
+          "sha256": "aed7f3625b4a36c3d400aeb625f74ebf598f1531f58aba26422779a18964d150"
+        },
+        "msg/GpsDump.msg": {
+          "mode": "100644",
+          "sha256": "e3cac3b7ba6c7561f5ae5759c93e46bab32fdda68cc2795901e05a16f950ac01"
+        },
+        "msg/GpsInjectData.msg": {
+          "mode": "100644",
+          "sha256": "7b151f2d22056117c9dfe5e3c75b6f0cbc0434344aed4d6ab540e9ac43b6d347"
+        },
+        "msg/Gripper.msg": {
+          "mode": "100644",
+          "sha256": "c77eb323885ac841927bde13d6086dfa39b33d2b2c1fa44bd73815898dcb1805"
+        },
+        "msg/HealthReport.msg": {
+          "mode": "100644",
+          "sha256": "b7b435ea2ab1ca656e79ea4e000ac3a2873dc2a7e8c1ba4f823509891ece8290"
+        },
+        "msg/HeaterStatus.msg": {
+          "mode": "100644",
+          "sha256": "492abb629fe52db6d9fad41dbcfe83fbf075e7b81b65463858aec06605d71a18"
+        },
+        "msg/HomePosition.msg": {
+          "mode": "100644",
+          "sha256": "6fcc4d8730bb216d4beea7b4b0e30ee5a7a5bba0fad003ccf46e7648bb8880c6"
+        },
+        "msg/HoverThrustEstimate.msg": {
+          "mode": "100644",
+          "sha256": "8a4a4390198fb4a0d36fefe571233cb452cec387168d3fea6cc761b5857d1f89"
+        },
+        "msg/InputRc.msg": {
+          "mode": "100644",
+          "sha256": "9cf91a3364d907d9ea65e6919712704398f5335a67852c7f1af443f9276322e1"
+        },
+        "msg/InternalCombustionEngineControl.msg": {
+          "mode": "100644",
+          "sha256": "7f603ac3642185dafe7b766662d57287407cc724f84849d2edbd27012b00f7e5"
+        },
+        "msg/InternalCombustionEngineStatus.msg": {
+          "mode": "100644",
+          "sha256": "f13d59567feca2c98e13e0866ba80a63ad371aec44f3fee0a9d6a09320957742"
+        },
+        "msg/IridiumsbdStatus.msg": {
+          "mode": "100644",
+          "sha256": "6c0e47c1d4a6c5a09f042269f2d36e3d69608977b432325dd33ddc01a4554b89"
+        },
+        "msg/IrlockReport.msg": {
+          "mode": "100644",
+          "sha256": "63fa6bbc991e188548ff432a9553f2dcbaba06a50c0bdaaad023974a4f7b9878"
+        },
+        "msg/LandingGear.msg": {
+          "mode": "100644",
+          "sha256": "935cc0bbaeea7205b6f2187808e9812ae2b3385e8ad680c17a17fceef4afc67b"
+        },
+        "msg/LandingGearWheel.msg": {
+          "mode": "100644",
+          "sha256": "b6308fc837587e617fd08594c022c99eb5bfbec99c62e0163239d0abcfd12915"
+        },
+        "msg/LandingTargetInnovations.msg": {
+          "mode": "100644",
+          "sha256": "a1602faf1275133ad282e2da6af6424f77dc3134f2f4fb9748293ee302f157e0"
+        },
+        "msg/LandingTargetPose.msg": {
+          "mode": "100644",
+          "sha256": "d6d9d634762dfefc54b0e01ed7698d5a249fabe10c4917aa99909c9b1769be1a"
+        },
+        "msg/LateralControlConfiguration.msg": {
+          "mode": "100644",
+          "sha256": "ca7d74473b0dc5ee771f6507671ab0b7bc03fef9ffc48bdfa0afa0e63adf64be"
+        },
+        "msg/LaunchDetectionStatus.msg": {
+          "mode": "100644",
+          "sha256": "99c360488496e86ca856a424dfe4ec55b573e1461c94fd5d7faa66c8bf56df63"
+        },
+        "msg/LedControl.msg": {
+          "mode": "100644",
+          "sha256": "aa9a6cce4e50199bc4c61555b98f7b2fdfd6fb3bfa35f07f197e8aa6cd9dde4d"
+        },
+        "msg/LogMessage.msg": {
+          "mode": "100644",
+          "sha256": "b522d5182f3d07795a61212abc3b15c5bb2333dc18f85c5ccf94df010b8fc3fe"
+        },
+        "msg/LoggerStatus.msg": {
+          "mode": "100644",
+          "sha256": "506671a58a4def87c8f5ccc9f808faf8d11a17e238caa7cec102a0cc78df2e8f"
+        },
+        "msg/LongitudinalControlConfiguration.msg": {
+          "mode": "100644",
+          "sha256": "186bde5c4838fb74f729001a069372d42143137fa5838f899865a17fd10af2e7"
+        },
+        "msg/MagWorkerData.msg": {
+          "mode": "100644",
+          "sha256": "fdf9c41a3db8b8e3eb43556067b14b4203a24d159fe763894aa727f50c0de28d"
+        },
+        "msg/MagnetometerBiasEstimate.msg": {
+          "mode": "100644",
+          "sha256": "10d58919c4618b3b86eb5503a4803515a7b074975453c74ef0694ea3a304cae6"
+        },
+        "msg/ManualControlSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "73a320c1957efeba07914dc54695e1f20d874b577e7eed430d7d2ff04ae1e950"
+        },
+        "msg/ManualControlSwitches.msg": {
+          "mode": "100644",
+          "sha256": "93aa003f1a6b937ec1d846804cce2c6e494e16d8c71cb2b1bcab1aa8d720454b"
+        },
+        "msg/MavlinkLog.msg": {
+          "mode": "100644",
+          "sha256": "a555166dcb9573ff553ab8937c1fc96635424c19231a95c9bd9de8bb02df1722"
+        },
+        "msg/MavlinkTunnel.msg": {
+          "mode": "100644",
+          "sha256": "bb8067846efe4ad87d178a62f8b7f35cb59c8ba0ba7f74d39dcd0efa3c30ffa7"
+        },
+        "msg/MessageFormatRequest.msg": {
+          "mode": "100644",
+          "sha256": "d529205eeaa021dd59fc75f3c2b3ab97f972f5ea95587cd18633d85f4ca957d8"
+        },
+        "msg/MessageFormatResponse.msg": {
+          "mode": "100644",
+          "sha256": "0a8350e515194727ac46d82e637a965a80a458c082afa65b6775af479540996e"
+        },
+        "msg/Mission.msg": {
+          "mode": "100644",
+          "sha256": "dac49ab119b247c6f24d31806c0f456cd993265005ede79d74e0b94a24dea57a"
+        },
+        "msg/MissionResult.msg": {
+          "mode": "100644",
+          "sha256": "a67f9f881bcf3a69e2de3af5f3b130abc721cc468e834d2f2073b475c88b6254"
+        },
+        "msg/ModeCompleted.msg": {
+          "mode": "100644",
+          "sha256": "b5b889f1a54e4f66d3c7c42847adcf68b26491ddf528fb47e4daea4440ff1eeb"
+        },
+        "msg/MountOrientation.msg": {
+          "mode": "100644",
+          "sha256": "b9c2a30fc5d5f91b3b9ebf25edf08d3bfda2dd31cf5ff8fbd2076497002aa27b"
+        },
+        "msg/NavigatorMissionItem.msg": {
+          "mode": "100644",
+          "sha256": "70935ff0fa0b21f9b61e3b48b690a27d2026e4c803b2964600b74b81446f2fbe"
+        },
+        "msg/NavigatorStatus.msg": {
+          "mode": "100644",
+          "sha256": "e018b1754e391a965a8d1d848654acc7f1b42b07df4b566ee79fde6f206812bb"
+        },
+        "msg/NeuralControl.msg": {
+          "mode": "100644",
+          "sha256": "b66b7cc9a4a25d7c9be24ee11bcc1c1d22c19c87a0180af7490f2e40ecd80d97"
+        },
+        "msg/NormalizedUnsignedSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "4cf57f7eab0d9f4c8f09ca75764a6c44a629c8c7bfc8b64481f489d524ecdb11"
+        },
+        "msg/ObstacleDistance.msg": {
+          "mode": "100644",
+          "sha256": "25d0af337b37f9e5389c0faf254c8d1842b04453455989bd122b09a39ec424de"
+        },
+        "msg/OffboardControlMode.msg": {
+          "mode": "100644",
+          "sha256": "8bd6fa373300e5bd35ade9d34ba0e1f470b880bf5d5b2f5c9316957bbe2a40e7"
+        },
+        "msg/OnboardComputerStatus.msg": {
+          "mode": "100644",
+          "sha256": "4a7142a74719b1b56bdbac153e26c91bb3244a0febcac8869203576bae242998"
+        },
+        "msg/OpenDroneIdArmStatus.msg": {
+          "mode": "100644",
+          "sha256": "362cc20941b1357540d6eb5fe342ed20f2ddbd5e2d27eaab20e74f02301fa9f2"
+        },
+        "msg/OpenDroneIdOperatorId.msg": {
+          "mode": "100644",
+          "sha256": "3a3f2070ee2ac510304311d92da9e5a3b42aae9349e97f322654feb8b36b0d13"
+        },
+        "msg/OpenDroneIdSelfId.msg": {
+          "mode": "100644",
+          "sha256": "984db79933a0154f8e9d8730e8be5a24b34a79d43b93c935e3fe15863bc545bb"
+        },
+        "msg/OpenDroneIdSystem.msg": {
+          "mode": "100644",
+          "sha256": "42deeac881dc6e8cdc22fa6a1ded0074027f68c46abd32e32c92efe894aafaed"
+        },
+        "msg/OrbTest.msg": {
+          "mode": "100644",
+          "sha256": "eede789e0e1341e13031863974605d186fb094e6f9ced4fcc41dade0f7371f64"
+        },
+        "msg/OrbTestLarge.msg": {
+          "mode": "100644",
+          "sha256": "881e2bd7bc5a5291bc7297e3b9fa37a984b0b581f2b804aafb0e80c8eccb7d4a"
+        },
+        "msg/OrbTestMedium.msg": {
+          "mode": "100644",
+          "sha256": "9e507d435a81e4310a043b54d73ade15b2826dc8d16006931431f0641e2a1a58"
+        },
+        "msg/OrbitStatus.msg": {
+          "mode": "100644",
+          "sha256": "992e24034e734bb2e8bcf5bf4146703d765ebebaa0405c57ce716270dfcda143"
+        },
+        "msg/ParameterResetRequest.msg": {
+          "mode": "100644",
+          "sha256": "d57eae2bbfba919a0f07bd0e87b5e76686ef43c8d61cb70b0391853d90f46540"
+        },
+        "msg/ParameterSetUsedRequest.msg": {
+          "mode": "100644",
+          "sha256": "d72c332af343dad3ab2b5fbdc712a9f53da90eb08fac9841061b67a655241ee0"
+        },
+        "msg/ParameterSetValueRequest.msg": {
+          "mode": "100644",
+          "sha256": "ff054adb695c5ff7a680ecda38355f440d541144a95646bf4d94f39cf429dfd4"
+        },
+        "msg/ParameterSetValueResponse.msg": {
+          "mode": "100644",
+          "sha256": "96ee73a98916bdca14d2509a83127c71fb7197e74e91ad301c74be875259198b"
+        },
+        "msg/ParameterUpdate.msg": {
+          "mode": "100644",
+          "sha256": "c0b62a2939caf52f20bbb53aaa1b6118dfeed1475cc7552fc3cc3a8e835585f5"
+        },
+        "msg/Ping.msg": {
+          "mode": "100644",
+          "sha256": "a62ee003c961b4ccc2389b455b629c6ab9544cc0c618c4b39951ac891a78040a"
+        },
+        "msg/PositionControllerLandingStatus.msg": {
+          "mode": "100644",
+          "sha256": "352afe2252c0c08bf31a9abdef42817be7be797d065d5ef363f7e69d4c064dc7"
+        },
+        "msg/PositionControllerStatus.msg": {
+          "mode": "100644",
+          "sha256": "c0ee08097ec7ee6e473d9d9b2f7d461cbf7b7b3b67afc53aa85cac356d990fd4"
+        },
+        "msg/PositionSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "38b2b9182936ba789a223ac9be5576f721e87329c45c62fb246975a6bc2d18cf"
+        },
+        "msg/PositionSetpointTriplet.msg": {
+          "mode": "100644",
+          "sha256": "f41f65ef32dccae829c4b02ec3d5596540ad39692d43ed2d72f648b0cb4cadc0"
+        },
+        "msg/PowerButtonState.msg": {
+          "mode": "100644",
+          "sha256": "867ceab681b64079356f435676bd74ede6354a6c3d9fe65cf7ca89bae8442d97"
+        },
+        "msg/PowerMonitor.msg": {
+          "mode": "100644",
+          "sha256": "3a04f180dbbeac92b32ee4e57653da39a30a0c60d25c03491b742c2940908c8c"
+        },
+        "msg/PpsCapture.msg": {
+          "mode": "100644",
+          "sha256": "d859756b3ec1765e1704cc64e59043497a53afc8c0936fb91e69567ac4cc3948"
+        },
+        "msg/PurePursuitStatus.msg": {
+          "mode": "100644",
+          "sha256": "86dcc0945b675fba42f665fe9aa9be5592e6b437cde921f6bda700be1e558d78"
+        },
+        "msg/PwmInput.msg": {
+          "mode": "100644",
+          "sha256": "0817f29b8638fde4c52ee76f544d942cb004d4088461df7c88592a77fce4971d"
+        },
+        "msg/Px4ioStatus.msg": {
+          "mode": "100644",
+          "sha256": "aeb9a30a83c2e25c6c16e11f90eb3294878c18dd913175c1163dc4dd8fc0d40c"
+        },
+        "msg/QshellReq.msg": {
+          "mode": "100644",
+          "sha256": "ab7890cf15bc4acc56a90061ce8bebce34d5b23a65e2324ba7ef8d1019dd6b6a"
+        },
+        "msg/QshellRetval.msg": {
+          "mode": "100644",
+          "sha256": "3741998b0e2136a2fb413b8a3fbf372ac58fc96050dcc7412a457f68f54f8aa7"
+        },
+        "msg/RadioStatus.msg": {
+          "mode": "100644",
+          "sha256": "a4daca29400caef72645d42202e9944939e1fa0b8993340d5fc33fb7bcd3c3f2"
+        },
+        "msg/RaptorInput.msg": {
+          "mode": "100644",
+          "sha256": "4295064804bdfbd9d1ef74d1389f4169f749c5e937848d498e9e598b66d1d9e4"
+        },
+        "msg/RaptorStatus.msg": {
+          "mode": "100644",
+          "sha256": "2bdeb544376a6dfaa897ef296b771ac8e52a24b9f4352cd85c0c9058c6d25328"
+        },
+        "msg/RateCtrlStatus.msg": {
+          "mode": "100644",
+          "sha256": "062eaa40fa8b0feaaf76e2d8410a64208d9998709070da9df507cf890d620ea7"
+        },
+        "msg/RcChannels.msg": {
+          "mode": "100644",
+          "sha256": "89bb38c4d7511a6cdd2d15368e0ba33d7550be1f067b87196ddcccce9c44668b"
+        },
+        "msg/RcParameterMap.msg": {
+          "mode": "100644",
+          "sha256": "2c26d0b03569e03c5627dad38dfd2846ec891f94b1c9b37562c7125d71fb1aa0"
+        },
+        "msg/RegisterExtComponentReply.msg": {
+          "mode": "100644",
+          "sha256": "200bdfa3c2ff71cbbc837fcef0770e814b4b3eed56a8667bad0525e7e5b12c3b"
+        },
+        "msg/RegisterExtComponentRequest.msg": {
+          "mode": "100644",
+          "sha256": "e24264e3c64e4e1a5e093f1d8e5e97827ef429b32a633c6664d93b83e3b78e40"
+        },
+        "msg/RoverAttitudeSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "b67b024eefa29e13312d53ee7214190e3b39ecae00a182ee4f5e6830d1d10bba"
+        },
+        "msg/RoverAttitudeStatus.msg": {
+          "mode": "100644",
+          "sha256": "2b5383d68e09ebc5e5e6c910072c2c9d004c6b27e7353ef97c925ff04e04d17a"
+        },
+        "msg/RoverPositionSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "918cf4d0a8f583313f9d7ec76f6d003ce4ee96bf6837c58b2190797c7e440e43"
+        },
+        "msg/RoverRateSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "4f929c0e3367f6c157f38524d0edcc59f0576a7b5d9ef4040ddf7aa6d0e93827"
+        },
+        "msg/RoverRateStatus.msg": {
+          "mode": "100644",
+          "sha256": "fb800e2cfa6fbb61a24c42af332303cba23689c70d32457d898c8ce7481496a6"
+        },
+        "msg/RoverSpeedSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "adaab97d9a941f5b46baaf76fc759aa852a7143ed5d2114494f61b2474c3a3b3"
+        },
+        "msg/RoverSpeedStatus.msg": {
+          "mode": "100644",
+          "sha256": "f7dbf141f13722e5e77fc507221cfb5cbc2f4437d96877cefc2255218280158c"
+        },
+        "msg/RoverSteeringSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "d3fb931d518a14d278a494b87d2dc7c5ce911c95c126e9481ddac8692409fa09"
+        },
+        "msg/RoverThrottleSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "f753124cb8c56bc270c0c598eb17f005c08fd25f424bb501d22f07b9728da5b1"
+        },
+        "msg/Rpm.msg": {
+          "mode": "100644",
+          "sha256": "26d304984ad5b90ef07d14fc3a1978d2c3c72aaa25194af3474ac3fd0ad339f4"
+        },
+        "msg/RtlStatus.msg": {
+          "mode": "100644",
+          "sha256": "1ad89b27e37fa729da24378cbb9fbf0f5ff93e4f9154a3c979ba87277e744d6f"
+        },
+        "msg/RtlTimeEstimate.msg": {
+          "mode": "100644",
+          "sha256": "bc0f088a20db51bf190830727b4a620b8dc5e44a913afed0f469d81e86baeb96"
+        },
+        "msg/SatelliteInfo.msg": {
+          "mode": "100644",
+          "sha256": "6bca084e32136ee28326d2a6e870791442602e497d55cedce134bfd6d9509eed"
+        },
+        "msg/SensorAccel.msg": {
+          "mode": "100644",
+          "sha256": "2bd894577cc016f0d2bf022f708125fa2ca61b45c8e29377007f3615db4f58e2"
+        },
+        "msg/SensorAccelFifo.msg": {
+          "mode": "100644",
+          "sha256": "44612630a55b0ad4c1ec940e52e0ea95c298b0110930a8ce13cd520636815be0"
+        },
+        "msg/SensorAirflow.msg": {
+          "mode": "100644",
+          "sha256": "9581ccac1dc03157a9087e12b6052210b7f945bdc2d54f6689df2e0976170a97"
+        },
+        "msg/SensorBaro.msg": {
+          "mode": "100644",
+          "sha256": "1a930d55c3731751794a7cf57c19e5edac3436368515af45ed7878d17d3840fb"
+        },
+        "msg/SensorCombined.msg": {
+          "mode": "100644",
+          "sha256": "ccac9a26fcf460228fe55459fe6710eb2e608665ff13141676805e98cbd5e462"
+        },
+        "msg/SensorCorrection.msg": {
+          "mode": "100644",
+          "sha256": "ca2eeaf165e57cab1cf7f0df46ca295ac6c41d1a8e72e737439c7fe2e88a87fc"
+        },
+        "msg/SensorGnssRelative.msg": {
+          "mode": "100644",
+          "sha256": "cee641875e365a9dab105a18cd77687df8bcbdf0e049513a100ff2d3ee0b410c"
+        },
+        "msg/SensorGnssStatus.msg": {
+          "mode": "100644",
+          "sha256": "5d3bb26befc3d0d7b15a3af0377e99f62fde226f35e37b44fb59db2b7116b4af"
+        },
+        "msg/SensorGps.msg": {
+          "mode": "100644",
+          "sha256": "d97c8eb596f2f4f5a79da30d868e1318d36491f032086339aa5bedd103d97b07"
+        },
+        "msg/SensorGyro.msg": {
+          "mode": "100644",
+          "sha256": "03771583b942c4755e4ed102601b0246ac3ccdacba3bfd6cd1175680e2df0e69"
+        },
+        "msg/SensorGyroFft.msg": {
+          "mode": "100644",
+          "sha256": "6559e37c33084f71fda2aa02bde38ac1ab1d2dd7d8fff48778cf8b406f507601"
+        },
+        "msg/SensorGyroFifo.msg": {
+          "mode": "100644",
+          "sha256": "9a779336d42d6399c8d77c26542017e8f6b61e44fb630f00d64e177d84ca57bc"
+        },
+        "msg/SensorHygrometer.msg": {
+          "mode": "100644",
+          "sha256": "af21bb5fa17efcb2f6e47c16cca92090af84dfd1eb157f66f8eafa94bf76f88a"
+        },
+        "msg/SensorMag.msg": {
+          "mode": "100644",
+          "sha256": "98ab9ac12e0557fabafa6708070f1bd152c9e8f8db6c9ba54b54949197344cd0"
+        },
+        "msg/SensorOpticalFlow.msg": {
+          "mode": "100644",
+          "sha256": "d72384ecf3f4c0aa79e8d67cfe503a4759cd1fbc9cb9605a08edc12a1fb57824"
+        },
+        "msg/SensorPreflightMag.msg": {
+          "mode": "100644",
+          "sha256": "71c3a4c2e499697093eb1723e9e87caa9489d5b241eab70418c9d19e60a51deb"
+        },
+        "msg/SensorSelection.msg": {
+          "mode": "100644",
+          "sha256": "655c7c89ad8a40eb4e04f059aeb92d639f6801982bee6e238347b90d444394c3"
+        },
+        "msg/SensorTemp.msg": {
+          "mode": "100644",
+          "sha256": "f352a7b8a143ae572f47804042f1e48f06b6abf65d582ab19eb2060f4f94e1ea"
+        },
+        "msg/SensorUwb.msg": {
+          "mode": "100644",
+          "sha256": "c5f5ad86e97d5ada515d0032742340493b34e17f9ce9d1f84e5dfa0038896a87"
+        },
+        "msg/SensorsStatus.msg": {
+          "mode": "100644",
+          "sha256": "1b752212b1691e7e46942d579a269db84ca1ae0fdda3f655981964d2661a353b"
+        },
+        "msg/SensorsStatusImu.msg": {
+          "mode": "100644",
+          "sha256": "942584728e9352c90e54ba4b8243b968f3c02a0b64133d96181d427c79c9c3f6"
+        },
+        "msg/SystemPower.msg": {
+          "mode": "100644",
+          "sha256": "f27a65fb800e4e2dbcd959239c94692a129af2ec459ceeac3d92c12b3f8aba03"
+        },
+        "msg/TakeoffStatus.msg": {
+          "mode": "100644",
+          "sha256": "0423eea2949999c32954bc03b750b013ba1d697d99878a78570cf6fe076c576c"
+        },
+        "msg/TaskStackInfo.msg": {
+          "mode": "100644",
+          "sha256": "7135b46beae67e62dce06e49d7b74cb3a8439eb0b23e71a7a3d4f34edcc36eda"
+        },
+        "msg/TecsStatus.msg": {
+          "mode": "100644",
+          "sha256": "47e6ef1448b98b6036856bb78e3d6b33ea4c59cb3c70d63f15822a6f98b7bd7d"
+        },
+        "msg/TelemetryStatus.msg": {
+          "mode": "100644",
+          "sha256": "cc0371ed7880e4c7b234d652754ad2f6f3a0d8b6965f6da757c1cd987c70dabd"
+        },
+        "msg/TiltrotorExtraControls.msg": {
+          "mode": "100644",
+          "sha256": "9f7c2b193705481f70d0e8534b5e64adac1506688237dcb3f871151757673903"
+        },
+        "msg/TimesyncStatus.msg": {
+          "mode": "100644",
+          "sha256": "244e915343f678a7a9895002d2f36983bfd4494a2a9167db70b01e2dc5a5566c"
+        },
+        "msg/TrajectorySetpoint.msg": {
+          "mode": "100644",
+          "sha256": "d5671f1a094a9183e2337171ab738ae3395442e024b58aaacbf51c2b0188d5e2"
+        },
+        "msg/TrajectorySetpoint6dof.msg": {
+          "mode": "100644",
+          "sha256": "67aad281f2a2bfe0ef9a1e6ae6b0ae145ef3c3b16d1a7ae77370f2aaac1ec08d"
+        },
+        "msg/TransponderReport.msg": {
+          "mode": "100644",
+          "sha256": "fb98a40bec71d1f79e959686f02de2cbfb425f16104194a85b2b1584970c063e"
+        },
+        "msg/TuneControl.msg": {
+          "mode": "100644",
+          "sha256": "708822a89e2e454809f9ffb3496aaa78fa71e193ffa8abb16bc70fa7195e4151"
+        },
+        "msg/UavcanParameterRequest.msg": {
+          "mode": "100644",
+          "sha256": "203689ecb37ef050db3b576a98003d242d19813887d4064e1e78284f5618dbeb"
+        },
+        "msg/UavcanParameterValue.msg": {
+          "mode": "100644",
+          "sha256": "90fd5600ca92bc71f317db46e1938ecba772e15aafc5accd280e513e0919da68"
+        },
+        "msg/UlogStream.msg": {
+          "mode": "100644",
+          "sha256": "f5cc70713b624b061b2b98e497cc61c4fc1c50769cb0095a4d935a4106833bb1"
+        },
+        "msg/UlogStreamAck.msg": {
+          "mode": "100644",
+          "sha256": "d57b51b75289b8eee97dcc3d1a5ee4224a63893332da7530c60a797740f563af"
+        },
+        "msg/UnregisterExtComponent.msg": {
+          "mode": "100644",
+          "sha256": "9058ad510bebfeb3e1f119695369a2a62244e3b47f14224f20f4eaa576adf934"
+        },
+        "msg/VehicleAcceleration.msg": {
+          "mode": "100644",
+          "sha256": "6ce08d0cb509df2b2db63518c4657b9df8c48e8626e1723d0684070de143c881"
+        },
+        "msg/VehicleAirData.msg": {
+          "mode": "100644",
+          "sha256": "acd9654c855ec025c078eaadada5964c5a50432f5f904362b8137b1c40103d16"
+        },
+        "msg/VehicleAngularAccelerationSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "9bfbe4cebf729c29566f38dba4d092e70c180d1233797ff7c26a05797704dce4"
+        },
+        "msg/VehicleAngularVelocity.msg": {
+          "mode": "100644",
+          "sha256": "4d713992ec958004629e5c8cbb5e83df2824c6df06e4cb4b06b3e0e3127bb3bf"
+        },
+        "msg/VehicleAttitude.msg": {
+          "mode": "100644",
+          "sha256": "d23f153b574daad31f21f767bc6e2781bcd486bb9e56c605b8b6fd10814b1c74"
+        },
+        "msg/VehicleAttitudeSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "80eeb96b9e66942ef6af451142fc756d18a0ce891ff6c274cb26486b3bf5109d"
+        },
+        "msg/VehicleCommand.msg": {
+          "mode": "100644",
+          "sha256": "bfe2974086b1f103036c73e30eceedf6fd7ebe72a4ef67265124f2dd15530161"
+        },
+        "msg/VehicleCommandAck.msg": {
+          "mode": "100644",
+          "sha256": "185833dab85d5e9682ac230afc8ef193c2d48ab43804af52bea2fdc4d959a782"
+        },
+        "msg/VehicleConstraints.msg": {
+          "mode": "100644",
+          "sha256": "bf70f44e4a4e15eaee9167d25bb10e8a483dd26cf75eb2a48b33847c03fdb324"
+        },
+        "msg/VehicleControlMode.msg": {
+          "mode": "100644",
+          "sha256": "7aefe90197d96024c4e4c5a9f71e5dba1ad9b6f6a16b272e81f81329bb012bcd"
+        },
+        "msg/VehicleGlobalPosition.msg": {
+          "mode": "100644",
+          "sha256": "15cfd19bba7dd5c0d26577900c8123a151ea3cc86d4a2785e6c9f58e68c0237c"
+        },
+        "msg/VehicleImu.msg": {
+          "mode": "100644",
+          "sha256": "36cd02728d1f825bb7da37e03624b8e2e7d055ae76aae1576aaffad6197d92bb"
+        },
+        "msg/VehicleImuStatus.msg": {
+          "mode": "100644",
+          "sha256": "f166cf6d8f5bbd1b7439a0f40092cf70273c58e60c90d92b929bdea42d62e206"
+        },
+        "msg/VehicleLandDetected.msg": {
+          "mode": "100644",
+          "sha256": "479ef4ed2bdf80acd4fe1d5cca988ee3dfe49e703494339eb7b62a01f00632f8"
+        },
+        "msg/VehicleLocalPosition.msg": {
+          "mode": "100644",
+          "sha256": "87d7540cb4207d044d69ff9af11c51f7cd2883f4160fc62650e17d80cbbec5db"
+        },
+        "msg/VehicleLocalPositionSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "b27bb0f8769901c5b6f2c97d1de68658f0728a64aa105c51237c5cd9d84c447d"
+        },
+        "msg/VehicleMagnetometer.msg": {
+          "mode": "100644",
+          "sha256": "d8ac3f5c0711f33d91a3b4736454d9f350bae122e4e6567f0df7f5667d114acb"
+        },
+        "msg/VehicleOdometry.msg": {
+          "mode": "100644",
+          "sha256": "a528b3d0b4c1a9083a71b32c367bad71a900e959efd82b9d03a9eb0e99fe6017"
+        },
+        "msg/VehicleOpticalFlow.msg": {
+          "mode": "100644",
+          "sha256": "21d28d74298ee18dc468392c19108e4d642072caaf7f7e93ff270de733041a63"
+        },
+        "msg/VehicleOpticalFlowVel.msg": {
+          "mode": "100644",
+          "sha256": "376191b6299d638b07b71d9c62e38d5e83cf097a3b2005a9c98f9b7fc4090bb2"
+        },
+        "msg/VehicleRatesSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "ffd2818487ed90b95908a20b967a6ec4357a922aa59ca00919b01638f06a6c58"
+        },
+        "msg/VehicleRoi.msg": {
+          "mode": "100644",
+          "sha256": "609aae1d710007d3236f2d7d5ea4eab12d935c1bb277707e97a8f4e971d5d5f5"
+        },
+        "msg/VehicleStatus.msg": {
+          "mode": "100644",
+          "sha256": "33dea7ae711f57b07c36f4548d0ab756dcde36b4b78f29e371b29a64140def21"
+        },
+        "msg/VehicleThrustSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "80c17f7b35173388aaf90da7447a348a96962274a00610da6a55295916e0c42e"
+        },
+        "msg/VehicleTorqueSetpoint.msg": {
+          "mode": "100644",
+          "sha256": "78ea10ffdc7bf8932b186785a80fb1db0a1966c0f90656e9a64027084e2b74ca"
+        },
+        "msg/VelocityLimits.msg": {
+          "mode": "100644",
+          "sha256": "6c7f8f64a2f934ab5fbbdc2dd9042e80f061e63de047ce29fba0a92542b0a021"
+        },
+        "msg/VtolVehicleStatus.msg": {
+          "mode": "100644",
+          "sha256": "7bb9521193128f01902f157fa78b93978473f61e9e7384c15073e4a5133b5c81"
+        },
+        "msg/Vtx.msg": {
+          "mode": "100644",
+          "sha256": "b76babc1b68bd710fb10896a53d70d829fbe0b6e3369c5061873344fd9f2e46e"
+        },
+        "msg/WheelEncoders.msg": {
+          "mode": "100644",
+          "sha256": "fc8becb5d133787e03c4d0c5ab3d1491f116aa01300a225531916596c05fed59"
+        },
+        "msg/Wind.msg": {
+          "mode": "100644",
+          "sha256": "c1850989e1e5c9c87ef5ef02d54e5190b9c1398045495716b4c787f4ad31d9e9"
+        },
+        "msg/YawEstimatorStatus.msg": {
+          "mode": "100644",
+          "sha256": "fadb4256edee20819637de979e091932d3417d96344abf62f4a4cd54a0e305b0"
+        },
+        "package.xml": {
+          "mode": "100644",
+          "sha256": "f4cb8d98daffc33cc9ca2dd895f83b156ed07fdb54a133088c075edea4ab576d"
+        },
+        "srv/VehicleCommand.srv": {
+          "mode": "100644",
+          "sha256": "86e14ec9e82dd69a1390406f1fa1ac3e91895031966f23f24de4351bb9af4424"
+        }
+      },
+      "repository": "https://github.com/PX4/px4_msgs.git"
+    },
+    "ws_vio_references/px4_ros_com": {
+      "commit": "86e9aeb20e55a4673fa8a9f1c29ea06a6c5ad1af",
+      "excluded_upstream_paths": [
+        ".vscode/settings.json"
+      ],
+      "files": {
+        ".github/dependabot.yml": {
+          "mode": "100644",
+          "sha256": "eeef2a7ee7def3bfbdcb0018a831200f6999bd9b3d09b4131e2e479bd7ef337d"
+        },
+        ".github/workflows/build.yml": {
+          "mode": "100644",
+          "sha256": "3c6b4b963b3985839d51430077cf3a65a19676d8cc6c6ecb21a40fb85fd1025a"
+        },
+        ".gitignore": {
+          "mode": "100644",
+          "sha256": "980975b11f1ad9f13e9f78724accca207c0aa7e2bbd3f2246751968e4b062a95"
+        },
+        "CMakeLists.txt": {
+          "mode": "100644",
+          "sha256": "21ded0d29c1b16abea53b81bb91b1a1a5bbb4d90dbf03d0eb1c30b1a0def2566"
+        },
+        "LICENSE": {
+          "mode": "100644",
+          "sha256": "9e3a8c94a10101eb3114a9212657e01914ee10e7880ee89aa9d24aea0eb6ba5d"
+        },
+        "README.md": {
+          "mode": "100644",
+          "sha256": "a54d1920236ac5d082a3bd2d84c01771cfc9a137f627340a2be4bede06f2c549"
+        },
+        "include/px4_ros_com/frame_transforms.h": {
+          "mode": "100644",
+          "sha256": "5cc6ffe3e3d812981572db2df6651043481ee439c240c371681a2e27b0a6e45d"
+        },
+        "launch/offboard_control_launch.yaml": {
+          "mode": "100644",
+          "sha256": "4383f68057af0cff933232fc71f0f088ccb7af7d2b03311be98c2dc034f9803a"
+        },
+        "launch/sensor_combined_listener.launch.py": {
+          "mode": "100644",
+          "sha256": "04589f86ef5cc8d410d3f49683a3060d2b148bc25f1da49dc24c0082850b354d"
+        },
+        "package.xml": {
+          "mode": "100644",
+          "sha256": "d9e45f72e21acafd6c9f8eced11297ea8272c7340c359261a1726e93668073af"
+        },
+        "px4_ros_com/__init__.py": {
+          "mode": "100644",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "px4_ros_com/module_to_import.py": {
+          "mode": "100644",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "scripts/__init__.py": {
+          "mode": "100644",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "scripts/build_all.bash": {
+          "mode": "100755",
+          "sha256": "f2168f9a6e687e9f55ae8325053d64bbddfe9ed48f88da270e918d0ca704cc74"
+        },
+        "scripts/build_ros2_workspace.bash": {
+          "mode": "100755",
+          "sha256": "f07898426824160143888c4acefacec475d2528fb55c4acd497c3521ef41fe87"
+        },
+        "scripts/setup_system.bash": {
+          "mode": "100755",
+          "sha256": "404bf3dd4e0d13a652662889fc4fdff3e750e1a1bededf527dca1dbc808b0bdc"
+        },
+        "src/examples/advertisers/debug_vect_advertiser.cpp": {
+          "mode": "100644",
+          "sha256": "a38c8f1812a17911ddfb837333eff413b47ea418c11ad8204e0e5f4216422127"
+        },
+        "src/examples/listeners/sensor_combined_listener.cpp": {
+          "mode": "100644",
+          "sha256": "b9b0ebad73a4469045f05a233b5cc1fa36a26b6976ec804b75b47bb94c9e3350"
+        },
+        "src/examples/listeners/vehicle_gps_position_listener.cpp": {
+          "mode": "100644",
+          "sha256": "f42b0fd831e27a743c53f18aadd4361431db4e3fb31466ecbc89db6755926f82"
+        },
+        "src/examples/offboard/offboard_control.cpp": {
+          "mode": "100644",
+          "sha256": "4b3c72fb0881c416c9466bbf62fd9fd92060d7c3dd016490035ac9b979107cd4"
+        },
+        "src/examples/offboard/offboard_control_srv.cpp": {
+          "mode": "100644",
+          "sha256": "555e4cb2ffa6e3234ef4068ce749b621adbce748d5c158a7c3467847c61a5248"
+        },
+        "src/examples/offboard_py/offboard_control.py": {
+          "mode": "100755",
+          "sha256": "d46dcecc17f02ac20f3602da81790c646a2873329e1eda5a3c405c924f275196"
+        },
+        "src/lib/frame_transforms.cpp": {
+          "mode": "100644",
+          "sha256": "478ad12b57e9bf478f30167d5eb068295d30ce6668a0a35f10b3608a049e5bca"
+        },
+        "test/__init__.py": {
+          "mode": "100644",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "test/pipeline_io_test.py": {
+          "mode": "100644",
+          "sha256": "3e16471d4a3d85db4a0818171dc98b7cffe172bf9d0f5e502d875d17365a5461"
+        },
+        "test/test_input.py": {
+          "mode": "100644",
+          "sha256": "0f03472e0be63d1a10dfd42466142f238ea9b63b1575d3108c35d847c65d53f1"
+        },
+        "test/test_output.py": {
+          "mode": "100755",
+          "sha256": "033db27c4dc7fdc59288066e08b2c3b0733247cb646129d7017beec027ce7e25"
+        }
+      },
+      "repository": "https://github.com/PX4/px4_ros_com.git"
+    }
+  },
+  "schema_version": 1
+}

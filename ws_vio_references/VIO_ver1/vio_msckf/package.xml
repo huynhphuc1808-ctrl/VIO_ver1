@@ -12,10 +12,9 @@
     <url type="repository">https://github.com/rpng/open_vins</url>
 
     <!-- Code Authors -->
-    <author email="pgeneva@udel.edu">Patrick Geneva</author>
     <author email="keck@udel.edu">Kevin Eckenhoff</author>
     <author email="ghuang@udel.edu">Guoquan Huang</author>
-    <maintainer email="pgeneva@udel.edu">Patrick Geneva</maintainer>
+    <maintainer email="huynhphuc1808@gmail.com">phuc</maintainer>
 
     <!-- Licensing -->
     <license>GNU General Public License v3.0</license>

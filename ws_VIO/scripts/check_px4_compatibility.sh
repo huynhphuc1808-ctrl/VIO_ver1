@@ -43,13 +43,15 @@ if [ ! -f "${compatibility_script}" ]; then
   echo "Upstream compatibility checker is missing: ${compatibility_script}" >&2
   exit 1
 fi
-# Inspect the actual checkout. A stale marker file must not certify a different tree.
-actual_interface_commit="$(git -C "${interface_dir}" rev-parse HEAD)"
+# Verify an independent Git checkout, or every included source file against the
+# pinned manifest. The enclosing monorepo HEAD is not an upstream dependency pin.
+source_verifier="${workspace_dir}/scripts/verify_dependency_source.py"
+actual_interface_commit="$(python3 "${source_verifier}" "${interface_dir}" "${expected_interface_commit}")"
 interface_registration="${interface_dir}/px4_ros2_cpp/src/components/registration.cpp"
 actual_interface_api="$(sed -nE \
   's/.*kLatestPX4ROS2ApiVersion[[:space:]]*=[[:space:]]*([0-9]+).*/\1/p' \
   "${interface_registration}")"
-actual_px4_msgs_commit="$(git -C "${px4_msgs_dir}" rev-parse HEAD)"
+actual_px4_msgs_commit="$(python3 "${source_verifier}" "${px4_msgs_dir}" "${expected_px4_msgs_commit}")"
 echo "PX4: ${actual_px4_commit}"
 echo "px4_msgs: ${actual_px4_msgs_commit}"
 echo "px4_ros2_cpp: ${actual_interface_commit}, API ${actual_interface_api:-unknown}"
@@ -90,7 +92,7 @@ if [ "${actual_interface_commit}" != "${expected_interface_commit}" ] \
   exit 1
 fi
 
-actual_px4_msgs_commit="$(git -C "${px4_msgs_dir}" rev-parse HEAD)"
+actual_px4_msgs_commit="$(python3 "${source_verifier}" "${px4_msgs_dir}" "${expected_px4_msgs_commit}")"
 if [ "${actual_px4_msgs_commit}" != "${expected_px4_msgs_commit}" ]; then
   echo "px4_msgs is not pinned to the validated commit" >&2
   echo "  expected: ${expected_px4_msgs_commit}" >&2
